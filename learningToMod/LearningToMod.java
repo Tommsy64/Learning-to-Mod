@@ -20,7 +20,11 @@ public class LearningToMod {
 	
 	@EventHandler
 	public static void preInit(FMLPreInitializationEvent event) {
+		//Initiate custom renderers
+		proxy.initRenderers();
 		
+		//Initiate custom sounds
+		proxy.initSounds();
 	}
 	
 	@EventHandler
