@@ -34,7 +34,10 @@ public class LearningToMod {
 	
 	@EventHandler 
 	static void preInit(FMLPreInitializationEvent event) {
+		
+		//Start the logger
 		LogHelper.init();
+		
 		LogHelper.log(Level.INFO, "Loading config");
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
 		LogHelper.log(Level.INFO, "Config loaded succesfuly");
