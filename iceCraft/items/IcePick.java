@@ -36,4 +36,10 @@ public class IcePick extends ItemTool {
 	public void registerIcons(IconRegister icon) {
 		itemIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":" + Names.icePick_unlocalizedName);
 	}
+	
+    public boolean hitEntity(ItemStack stack, EntityLivingBase par2EntityLivingBase, EntityLivingBase par3EntityLivingBase)
+    {
+        stack.damageItem(6, par3EntityLivingBase);
+        return true;
+    }
 }
