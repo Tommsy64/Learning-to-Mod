@@ -1,7 +1,7 @@
-package learningToMod.items;
+package iceCraft.items;
 
-import learningToMod.lib.config.Ids;
-import learningToMod.lib.config.Names;
+import iceCraft.lib.config.Ids;
+import iceCraft.lib.config.Names;
 import net.minecraft.item.Item;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 

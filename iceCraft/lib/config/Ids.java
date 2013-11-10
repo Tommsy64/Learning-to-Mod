@@ -1,4 +1,4 @@
-package learningToMod.lib.config;
+package iceCraft.lib.config;
 
 public class Ids {
 	public static int iceShard_actual;
