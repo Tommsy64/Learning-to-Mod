@@ -69,6 +69,8 @@ public class IceCraft {
 		Blocks.addNames();
 		LogHelper.log(Level.INFO, "Blocks loaded");
 		
+		
+		
 		LogHelper.log(Level.INFO, "Preparing recipes");
 		Recipes.init();
 		LogHelper.log(Level.INFO, "Recipes loaded");
