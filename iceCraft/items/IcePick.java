@@ -5,6 +5,7 @@ import iceCraft.lib.ModInfo;
 import iceCraft.lib.config.Names;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.EnumAction;
@@ -32,6 +33,7 @@ public class IcePick extends ItemTool {
 		super(id, dameageVsEntity, toolMaterial, blocksEffectiveAgainst);
 
 		enumToolMaterial = toolMaterial;
+		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(IceCraft.IceCraftTab);
 		this.setMaxStackSize(1);
 	}

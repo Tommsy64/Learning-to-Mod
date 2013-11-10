@@ -15,6 +15,8 @@ public class ConfigHandler {
 		
 		Ids.icePick_actual = config.getItem(Names.icePick_name, Ids.icePick_default).getInt() - 256;
 		
+		Ids.wetIce_actual = config.getItem(Names.wetIce_name, Ids.wetIce_default).getInt() - 256;
+		
 		config.save();
 	}
 }
