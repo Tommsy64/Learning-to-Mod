@@ -6,8 +6,8 @@
 "version": "Alpha v0.0.1",
 "authorList": ["Tommsy64", "Dichlorodiphen"],
 "credits": "",
-"logoFile": "assets/IronMan/info/logoFile.png",
-"screenshots": ["assets/IronMan/info/screenShot1.png"],
+"logoFile": "assets/icec/info/logoFile.png",
+"screenshots": ["assets/icec/info/screenShot1.png"],
 "mcversion": "1.6.4"
 }
 ]

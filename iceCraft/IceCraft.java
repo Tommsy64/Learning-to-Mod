@@ -2,6 +2,7 @@ package iceCraft;
 
 import iceCraft.blocks.Blocks;
 import iceCraft.items.Items;
+import iceCraft.items.Tools;
 import iceCraft.lib.IceCraftTab;
 import iceCraft.lib.LogHelper;
 import iceCraft.lib.ModInfo;
@@ -69,8 +70,11 @@ public class IceCraft {
 		Blocks.addNames();
 		LogHelper.log(Level.INFO, "Blocks loaded");
 		
-		
-		
+		LogHelper.log(Level.INFO, "Preparing tools");
+		Tools.init();
+		Tools.addNames();
+		LogHelper.log(Level.INFO, "Tools loaded");
+				
 		LogHelper.log(Level.INFO, "Preparing recipes");
 		Recipes.init();
 		LogHelper.log(Level.INFO, "Recipes loaded");
