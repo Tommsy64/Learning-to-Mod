@@ -9,6 +9,7 @@ import iceCraft.lib.ModInfo;
 import iceCraft.lib.Recipes;
 import iceCraft.lib.config.ConfigHandler;
 import iceCraft.proxies.CommonProxy;
+import iceCraft.sound.Sound;
 
 import java.util.logging.Level;
 
@@ -50,7 +51,7 @@ public class IceCraft {
 		
 		LogHelper.log(Level.INFO, "Preparing Audio");
 		proxy.initSounds();
-		LogHelper.log(Level.INFO, "Audio loaded");
+		LogHelper.log(Level.INFO, "Loaded " + Sound.files.length + " audio files");
 	}
 	
 	@EventHandler 
