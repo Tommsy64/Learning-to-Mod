@@ -1,7 +1,7 @@
-package learningToMod.lib;
+package iceCraft.lib;
 
+import iceCraft.items.Items;
 import cpw.mods.fml.common.registry.GameRegistry;
-import learningToMod.items.Items;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;

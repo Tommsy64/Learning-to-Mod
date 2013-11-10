@@ -1,11 +1,11 @@
-package learningToMod.lib;
+package iceCraft.lib;
 
-import learningToMod.items.Items;
+import iceCraft.items.Items;
 import net.minecraft.creativetab.CreativeTabs;
 
-public class LearningToModTab extends CreativeTabs {
+public class IceCraftTab extends CreativeTabs {
 
-	public LearningToModTab(int id, String name) {
+	public IceCraftTab(int id, String name) {
 		super(id, name);
 	}
 	

@@ -1,4 +1,4 @@
-package learningToMod.proxies;
+package iceCraft.proxies;
 
 public class ClientProxy extends CommonProxy {
 	@Override

@@ -1,15 +1,16 @@
-package learningToMod;
+package iceCraft;
+
+import iceCraft.blocks.Blocks;
+import iceCraft.items.Items;
+import iceCraft.lib.IceCraftTab;
+import iceCraft.lib.LogHelper;
+import iceCraft.lib.ModInfo;
+import iceCraft.lib.Recipes;
+import iceCraft.lib.config.ConfigHandler;
+import iceCraft.proxies.CommonProxy;
 
 import java.util.logging.Level;
 
-import learningToMod.blocks.Blocks;
-import learningToMod.items.Items;
-import learningToMod.lib.LearningToModTab;
-import learningToMod.lib.LogHelper;
-import learningToMod.lib.ModInfo;
-import learningToMod.lib.Recipes;
-import learningToMod.lib.config.ConfigHandler;
-import learningToMod.proxies.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -24,13 +25,13 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 @Mod( modid = ModInfo.ID, name = ModInfo.NAME, version = ModInfo.VERSION )
 @NetworkMod ( channels = {ModInfo.CHANNEL}, clientSideRequired = true, serverSideRequired = true )
 
-public class LearningToMod {
+public class IceCraft {
 	
 	@SidedProxy( clientSide = ModInfo.PROXY_LOCATION + ".ClientProxy", serverSide = ModInfo.PROXY_LOCATION + ".CommonProxy")
 	public static CommonProxy proxy;
 	
 	//Setting up the Creative Tabs
-	public static CreativeTabs LearningToModTab = new LearningToModTab(CreativeTabs.getNextID(), ModInfo.NAME);
+	public static CreativeTabs IceCraftTab = new IceCraftTab(CreativeTabs.getNextID(), ModInfo.NAME);
 	
 	@EventHandler 
 	static void preInit(FMLPreInitializationEvent event) {

@@ -1,4 +1,4 @@
-package learningToMod.proxies;
+package iceCraft.proxies;
 
 public class CommonProxy {
 	public void initRenderers() {

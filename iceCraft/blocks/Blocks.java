@@ -1,4 +1,4 @@
-package learningToMod.blocks;
+package iceCraft.blocks;
 
 
 public class Blocks { 

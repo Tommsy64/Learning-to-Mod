@@ -1,4 +1,4 @@
-package learningToMod.lib.config;
+package iceCraft.lib.config;
 
 public class Names {
 	//Items
