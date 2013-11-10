@@ -20,7 +20,7 @@ public class IcePick extends ItemTool {
 	EnumToolMaterial enumToolMaterial;
 	
 	//EnumHelper.addToolMaterial(name, harvestLevel, maxUses, efficiency, damage, enchantability)
-	public static final EnumToolMaterial IcePickTool = EnumHelper.addToolMaterial("IcePickTool", 1, 255, 1.5F, 2.0F, 14);
+	public static final EnumToolMaterial IcePickTool = EnumHelper.addToolMaterial("IcePickTool", 1, 255, 1.0F, 2.0F, 14);
 	
 	protected IcePick(int id, float dameageVsEntity,
 			EnumToolMaterial toolMaterial, Block[] blocksEffectiveAgainst) {
@@ -39,7 +39,12 @@ public class IcePick extends ItemTool {
 	
     public boolean hitEntity(ItemStack stack, EntityLivingBase par2EntityLivingBase, EntityLivingBase par3EntityLivingBase)
     {
-        stack.damageItem(6, par3EntityLivingBase);
+        stack.damageItem(10, par3EntityLivingBase);
+        return true;
+    }
+    
+    public boolean isFull3D()
+    {
         return true;
     }
 }
