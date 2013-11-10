@@ -42,9 +42,4 @@ public class IcePick extends ItemTool {
         stack.damageItem(10, par3EntityLivingBase);
         return true;
     }
-    
-    public boolean isFull3D()
-    {
-        return true;
-    }
 }
