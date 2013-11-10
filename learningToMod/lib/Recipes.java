@@ -9,9 +9,9 @@ public class Recipes {
 	
 	public static void init() { 
 		CraftingManager.getInstance().addRecipe(new ItemStack(Block.ice, 1),
-				"",
-				"SS",
-				"SS",
-				Character.valueOf('S'), Items.iceShard);
+				"CCC",
+				"CCC",
+				"CCC",
+				Character.valueOf('C'), Block.cobblestone);
 	}
 }
