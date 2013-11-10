@@ -1,5 +1,6 @@
 package learningToMod.items;
 
+import learningToMod.LearningToMod;
 import learningToMod.lib.ModInfo;
 import learningToMod.lib.config.Names;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -15,7 +16,7 @@ public class IceShard extends Item {
 		
 		//Set creative tabs
 		this.setCreativeTab(CreativeTabs.tabAllSearch);
-		this.setCreativeTab(CreativeTabs.tabMaterials);
+		this.setCreativeTab(LearningToMod.LearningToModTab);
 		
 		//Set Unlocalized Name
 		this.setUnlocalizedName(Names.iceShard_unlocalizedName);
