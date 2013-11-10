@@ -1,6 +1,13 @@
 {
    "pack":{
       "pack_format":1,
-      "description":"A mod create while learning how to mod Minecraft"
+      "description":"A mod created while learning how to mod Minecraft"
+   },
+   "language":{
+      "en_US": {
+        "name": "English",
+        "region": "United States",
+        "bidirectional":false
+      }
    }
 }

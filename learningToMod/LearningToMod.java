@@ -49,8 +49,7 @@ public class LearningToMod {
 	}
 	
 	@EventHandler 
-	static void init(FMLInitializationEvent event) {
-		
+	static void init(FMLInitializationEvent event) {		
 		//Fix the itemGroup in front of creative tab name
 		LogHelper.log(Level.INFO, "Setting up language");
 		LanguageRegistry.instance().addStringLocalization("itemGroup." + ModInfo.NAME, "en_US", ModInfo.NAME);
