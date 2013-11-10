@@ -1,0 +1,13 @@
+[
+{
+"modid": "LTM",
+"name": "Learning to Mod",
+"description": "A mod create while learning how to mod Minecraft",
+"version": "Alpha v0.0.1",
+"authorList": ["Tommsy64", "Dichlorodiphen"],
+"credits": "",
+"logoFile": "assets/IronMan/info/logoFile.png",
+"screenshots": ["assets/IronMan/info/screenShot1.png"],s
+"mcversion": "1.6.4"
+}
+]
