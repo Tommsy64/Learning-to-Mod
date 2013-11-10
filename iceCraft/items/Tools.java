@@ -12,7 +12,7 @@ public class Tools {
 	public static ItemTool icePick;
 	
 	public static void init() {
-		icePick = new IcePick(Ids.icePick_actual, 4, EnumToolMaterial.IRON, 
+		icePick = new IcePick(Ids.icePick_actual, 4, IcePick.IcePickTool, 
 				new Block[] {Block.ice});
 	}
 	
