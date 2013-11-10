@@ -13,6 +13,8 @@ public class ConfigHandler {
 		//Items are shifted 256, so we subtract 256 to compensate
 		Ids.iceShard_actual = config.getItem(Names.iceShard_name, Ids.iceShard_default).getInt() - 256;
 		
+		Ids.icePick_actual = config.getItem(Names.icePick_name, Ids.icePick_default).getInt() - 256;
+		
 		config.save();
 	}
 }
