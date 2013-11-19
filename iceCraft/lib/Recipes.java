@@ -31,6 +31,6 @@ public class Recipes {
 		
 		//Add the fuels
 		
-		IceCraftFuelHandler.addItem(Item.sign.itemID, 500);
+		IceCraftFuelHandler.addItem(Item.sign.itemID, 300);
 	}
 }
