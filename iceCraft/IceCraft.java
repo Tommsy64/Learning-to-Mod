@@ -43,44 +43,45 @@ public class IceCraft {
 		//Start the logger
 		LogHelper.init();
 		
-		LogHelper.log(Level.INFO, "Loading config");
+		LogHelper.log(Level.INFO, "Loading Config...");
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
-		LogHelper.log(Level.INFO, "Config loaded succesfuly");
+		LogHelper.log(Level.INFO, "Config Successfully Loaded.");
 		
-		LogHelper.log(Level.INFO, "Preparing Renderers");
+		LogHelper.log(Level.INFO, "Preparing Renderers...");
 		proxy.initRenderers();
-		LogHelper.log(Level.INFO, "Renderers loaded");
+		LogHelper.log(Level.INFO, "Renderers Loaded.");
 		
-		LogHelper.log(Level.INFO, "Preparing Audio");
+		LogHelper.log(Level.INFO, "Preparing Audio...");
 		proxy.initSounds();
-		LogHelper.log(Level.INFO, "Loaded " + Sound.files.length + " audio files");
+		LogHelper.log(Level.INFO, "Loaded " + Sound.files.length + " Audio Files.");
 	}
 	
 	@EventHandler 
 	static void init(FMLInitializationEvent event) {		
 		//Fix the itemGroup in front of creative tab name
-		LogHelper.log(Level.INFO, "Setting up language");
-		LanguageRegistry.instance().addStringLocalization("itemGroup." + ModInfo.NAME, "en_US", ModInfo.NAME);
-		LogHelper.log(Level.INFO, "Language loaded");
 		
-		LogHelper.log(Level.INFO, "Preparing items");
+		LogHelper.log(Level.INFO, "Setting up Language...");
+		LanguageRegistry.instance().addStringLocalization("itemGroup." + ModInfo.NAME, "en_US", ModInfo.NAME);
+		LogHelper.log(Level.INFO, "Language Loaded.");
+		
+		LogHelper.log(Level.INFO, "Preparing Items...");
 		Items.init();
 		Items.addNames();
-		LogHelper.log(Level.INFO, "Items loaded");
+		LogHelper.log(Level.INFO, "Items Loaded.");
 		
-		LogHelper.log(Level.INFO, "Preparing blocks");
+		LogHelper.log(Level.INFO, "Preparing Blocks...");
 		Blocks.init();
 		Blocks.addNames();
-		LogHelper.log(Level.INFO, "Blocks loaded");
+		LogHelper.log(Level.INFO, "Blocks Loaded.");
 		
-		LogHelper.log(Level.INFO, "Preparing tools");
+		LogHelper.log(Level.INFO, "Preparing Tools...");
 		Tools.init();
 		Tools.addNames();
-		LogHelper.log(Level.INFO, "Tools loaded");
+		LogHelper.log(Level.INFO, "Tools Loaded...");
 				
-		LogHelper.log(Level.INFO, "Preparing recipes");
+		LogHelper.log(Level.INFO, "Preparing Recipes...");
 		Recipes.init();
-		LogHelper.log(Level.INFO, "Recipes loaded");
+		LogHelper.log(Level.INFO, "Recipes Loaded.");
 	}
 	
 	@EventHandler 
