@@ -11,6 +11,7 @@ public class Recipes {
 	
 	public static void init() { 
 		
+		//Craft
 		CraftingManager.getInstance().addRecipe(new ItemStack(Block.ice, 1),
 				"SSS",
 				"SSS",
@@ -20,8 +21,15 @@ public class Recipes {
 		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(Block.ice, 1), new ItemStack(Items.iceShard, 1),
 				new ItemStack(Items.iceShard, 1), new ItemStack(Items.iceShard, 1), new ItemStack(Items.iceShard, 1));
 		
+		//Smelting
 		GameRegistry.addSmelting(Block.ice.blockID, new ItemStack(Block.waterStill), 0.1F);
 		GameRegistry.addSmelting(Item.bucketWater.itemID, new ItemStack(Item.bucketEmpty), 0.1F);
+
+		//Initiate the FuelHandler
+		GameRegistry.registerFuelHandler(new IceCraftFuelHandler());
 		
+		//Add the fuels
+		
+		IceCraftFuelHandler.addItem(Item.sign.itemID, 500);
 	}
 }
