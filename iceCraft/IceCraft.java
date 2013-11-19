@@ -45,15 +45,15 @@ public class IceCraft {
 		
 		LogHelper.log(Level.INFO, "Loading Config...");
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
-		LogHelper.log(Level.INFO, "Config Successfully Loaded.");
+		LogHelper.log(Level.INFO, "Config Successfully Loaded");
 		
 		LogHelper.log(Level.INFO, "Preparing Renderers...");
 		proxy.initRenderers();
-		LogHelper.log(Level.INFO, "Renderers Loaded.");
+		LogHelper.log(Level.INFO, "Renderers Loaded");
 		
 		LogHelper.log(Level.INFO, "Preparing Audio...");
 		proxy.initSounds();
-		LogHelper.log(Level.INFO, "Loaded " + Sound.files.length + " Audio Files.");
+		LogHelper.log(Level.INFO, "Loaded " + Sound.files.length + " Audio Files");
 	}
 	
 	@EventHandler 
@@ -62,17 +62,17 @@ public class IceCraft {
 		
 		LogHelper.log(Level.INFO, "Setting up Language...");
 		LanguageRegistry.instance().addStringLocalization("itemGroup." + ModInfo.NAME, "en_US", ModInfo.NAME);
-		LogHelper.log(Level.INFO, "Language Loaded.");
+		LogHelper.log(Level.INFO, "Language Loaded");
 		
 		LogHelper.log(Level.INFO, "Preparing Items...");
 		Items.init();
 		Items.addNames();
-		LogHelper.log(Level.INFO, "Items Loaded.");
+		LogHelper.log(Level.INFO, "Items Loaded");
 		
 		LogHelper.log(Level.INFO, "Preparing Blocks...");
 		Blocks.init();
 		Blocks.addNames();
-		LogHelper.log(Level.INFO, "Blocks Loaded.");
+		LogHelper.log(Level.INFO, "Blocks Loaded");
 		
 		LogHelper.log(Level.INFO, "Preparing Tools...");
 		Tools.init();
@@ -81,7 +81,7 @@ public class IceCraft {
 				
 		LogHelper.log(Level.INFO, "Preparing Recipes...");
 		Recipes.init();
-		LogHelper.log(Level.INFO, "Recipes Loaded.");
+		LogHelper.log(Level.INFO, "Recipes Loaded");
 	}
 	
 	@EventHandler 
