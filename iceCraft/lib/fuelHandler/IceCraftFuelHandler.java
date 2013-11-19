@@ -7,19 +7,26 @@ import cpw.mods.fml.common.IFuelHandler;
 
 public class IceCraftFuelHandler implements IFuelHandler {
 	
-	ArrayList<String> fuels = new ArrayList<String>();
+	private static ArrayList<FuelType> fuels = new ArrayList<FuelType>();
 
 	@Override
 	public int getBurnTime(ItemStack fuel) {
-		// TODO Auto-generated method stub
+		
+		for (FuelType arrayFuel : fuels) {
+			if (arrayFuel.getItemId() == fuel.itemID) {
+				return arrayFuel.getBurnTime();
+			}
+		}
+		
 		return 0;
 	}
 	
-	public static void addItem(ItemStack fuel, int burnTimeTicks) {
-		
+	public static void addItem(ItemStack fuel, int burnTimeTicks) {		
+		addItem(fuel.itemID, burnTimeTicks);
 	}
 	
 	public static void addItem(int fuelId, int burnTimeTicks) {
-		
+		FuelType fuelType = new FuelType(fuelId, burnTimeTicks);		
+		fuels.add(fuelType);
 	}
 }

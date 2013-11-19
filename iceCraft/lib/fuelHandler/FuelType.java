@@ -5,7 +5,7 @@ public class FuelType {
 	private int itemId;
 	private int burnTime;
 	
-	public void fuelType(int itemId, int burnTime) {
+	public FuelType(int itemId, int burnTime) {
 		this.itemId = itemId;
 		this.burnTime = burnTime;
 	}
