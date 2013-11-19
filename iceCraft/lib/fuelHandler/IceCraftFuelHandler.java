@@ -1,14 +1,13 @@
-package iceCraft.lib;
+package iceCraft.lib.fuelHandler;
 
-import java.util.Dictionary;
-import java.util.TreeMap;
+import java.util.ArrayList;
 
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.IFuelHandler;
 
 public class IceCraftFuelHandler implements IFuelHandler {
 	
-	private static Dictionary<String, Integer> fuels;
+	ArrayList<String> fuels = new ArrayList<String>();
 
 	@Override
 	public int getBurnTime(ItemStack fuel) {
@@ -17,7 +16,7 @@ public class IceCraftFuelHandler implements IFuelHandler {
 	}
 	
 	public static void addItem(ItemStack fuel, int burnTimeTicks) {
-		fuels.put(arg0, arg1)
+		
 	}
 	
 	public static void addItem(int fuelId, int burnTimeTicks) {

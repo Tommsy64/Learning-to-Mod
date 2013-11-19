@@ -3,12 +3,12 @@ package iceCraft;
 import iceCraft.blocks.Blocks;
 import iceCraft.items.Items;
 import iceCraft.items.Tools;
-import iceCraft.lib.IceCraftFuelHandler;
 import iceCraft.lib.IceCraftTab;
 import iceCraft.lib.LogHelper;
 import iceCraft.lib.ModInfo;
 import iceCraft.lib.Recipes;
 import iceCraft.lib.config.ConfigHandler;
+import iceCraft.lib.fuelHandler.IceCraftFuelHandler;
 import iceCraft.proxies.CommonProxy;
 import iceCraft.sound.Sound;
 

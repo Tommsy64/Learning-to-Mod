@@ -1,6 +1,7 @@
 package iceCraft.lib;
 
 import iceCraft.items.Items;
+import iceCraft.lib.fuelHandler.IceCraftFuelHandler;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
