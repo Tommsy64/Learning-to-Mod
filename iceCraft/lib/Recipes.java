@@ -46,7 +46,8 @@ public class Recipes {
 			IceCraftFuelHandler.addItem(Item.book.itemID, 400);
 			IceCraftFuelHandler.addItem(Item.bed.itemID, 250);
 			IceCraftFuelHandler.addItem(Item.blazePowder.itemID, 1200);
-			LogHelper.log(Level.INFO, "Enabled more burnables");
+			IceCraftFuelHandler.addItem(Item.map.itemID, 200);
+			LogHelper.log(Level.INFO, "Enabled More Burnables");
 		}
 	}
 }
