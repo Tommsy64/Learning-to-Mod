@@ -22,6 +22,9 @@ public class ConfigHandler {
 
 		Ids.icePick_actual = config.getItem(config.CATEGORY_ITEM,
 				Names.icePick_name, Ids.icePick_default).getInt() - 256;
+		
+		Ids.mud_actual = config.getItem(config.CATEGORY_ITEM,
+				Names.mud_name, Ids.mud_default).getInt() - 256;
 
 		// Blocks
 		Ids.wetIce_actual = config.getItem(config.CATEGORY_BLOCK,

@@ -7,6 +7,10 @@ public class Ids {
 	public static int icePick_actual;
 	public static final int icePick_default = 16001;
 	
+	public static int mud_actual;
+	public static final int mud_default = 16002;
+	
 	public static int wetIce_actual;
 	public static final int wetIce_default = 3841;
+
 }
