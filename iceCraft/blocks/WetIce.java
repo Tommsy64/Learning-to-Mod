@@ -30,15 +30,32 @@ public class WetIce extends Block {
 		this.setCreativeTab(IceCraft.IceCraftTab);
 	}
 
+	
+	//Icons
 	@SideOnly(Side.CLIENT)
 	public static Icon topIcon;
 
+	@SideOnly(Side.CLIENT)
+	public static Icon sideAndBottomIcon;
+
+	//Get Icons
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister icon) {
 		topIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
 				+ Names.wetIce_unlocalizedName + "_top");
-		blockIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
+		sideAndBottomIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
 				+ Names.wetIce_unlocalizedName);
+	}
+
+	//Return Icons
+	@Override
+	@SideOnly(Side.CLIENT)
+	public Icon getIcon(int side, int metadata) {
+		if (side == 1) {
+			return topIcon;
+		} else {
+			return sideAndBottomIcon;
+		}
 	}
 }
