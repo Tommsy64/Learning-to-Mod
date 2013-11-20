@@ -13,4 +13,10 @@ public class Names {
 	
 	public static final String wetIce_unlocalizedName = "wetIce"; 
 	public static final String wetIce_name = "Wet Ice";
+	
+	public static final String rawBacon_unlocalizedName = "rawBacon";
+	public static final String rawBacon_name = "Raw Bacon";
+	
+	public static final String bacon_unlocalizedName = "bacon";
+	public static final String bacon_name = "Bacon";
 }
