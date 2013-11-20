@@ -3,6 +3,9 @@ package iceCraft.lib;
 import iceCraft.items.Items;
 import iceCraft.lib.config.ConfigBooleans;
 import iceCraft.lib.fuelHandler.IceCraftFuelHandler;
+
+import java.util.logging.Level;
+
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -43,6 +46,7 @@ public class Recipes {
 			IceCraftFuelHandler.addItem(Item.book.itemID, 400);
 			IceCraftFuelHandler.addItem(Item.bed.itemID, 250);
 			IceCraftFuelHandler.addItem(Item.blazePowder.itemID, 1200);
+			LogHelper.log(Level.INFO, "Enabled more burnables");
 		}
 	}
 }
