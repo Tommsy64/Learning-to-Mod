@@ -10,14 +10,20 @@ public class Items {
 	
 	public static Item iceShard;
 	public static Item mud;
+	public static Item rawBacon;
+	public static Item bacon;
 	
 	public static void init() {
 		iceShard = new IceShard(Ids.iceShard_actual);
 		mud = new Mud(Ids.mud_actual);
+		rawBacon = new RawBacon(Ids.rawBacon_actual);
+		bacon = new Bacon(Ids.bacon_actual);
 	}
 	
 	public static void addNames() {
 		LanguageRegistry.addName(iceShard, Names.iceShard_name);
 		LanguageRegistry.addName(mud, Names.mud_name);
+		LanguageRegistry.addName(rawBacon, Names.rawBacon_name);
+		LanguageRegistry.addName(bacon, Names.bacon_name);
 	}
 }
