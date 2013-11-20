@@ -31,11 +31,12 @@ public class Recipes {
 		GameRegistry.registerFuelHandler(new IceCraftFuelHandler());
 		
 		//Add the fuels
-		if (ConfigBooleans.enableMoreBurnables) {
+		if (ConfigBooleans.enableBurnables) {
 			IceCraftFuelHandler.addItem(Item.sign.itemID, 250);
 			IceCraftFuelHandler.addItem(Item.bowlEmpty.itemID, 150);
 			IceCraftFuelHandler.addItem(Item.boat.itemID, 240);
 			IceCraftFuelHandler.addItem(Item.map.itemID, 200);
+			IceCraftFuelHandler.addItem(Item.emptyMap.itemID, 200);
 			IceCraftFuelHandler.addItem(Item.doorWood.itemID, 600);
 			IceCraftFuelHandler.addItem(Item.painting.itemID, 100);
 			IceCraftFuelHandler.addItem(Item.paper.itemID, 125);
