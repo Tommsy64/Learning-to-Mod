@@ -24,6 +24,13 @@ public class Recipes {
 				"SSS",
 				Character.valueOf('S'), Items.iceShard);
 		
+		CraftingManager.getInstance().addRecipe(new ItemStack(Blocks.wetIce, 4),
+				"SSS",
+				"SWS",
+				"SSS",
+				Character.valueOf('S'), Items.iceShard,
+				Character.valueOf('W'), Item.bucketWater);
+		
 		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(Block.ice, 1), new ItemStack(Items.iceShard, 1),
 				new ItemStack(Items.iceShard, 1), new ItemStack(Items.iceShard, 1), new ItemStack(Items.iceShard, 1));
 		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(Items.mud, 4), new ItemStack(Block.dirt, 1), new ItemStack(Item.bucketWater));
