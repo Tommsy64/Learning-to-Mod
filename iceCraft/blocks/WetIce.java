@@ -20,6 +20,7 @@ public class WetIce extends Block {
 		this.setHardness(0.5F);
 		this.setLightOpacity(3);
 		this.slipperiness = 1.05F;
+		this.setUnlocalizedName(Names.wetIce_unlocalizedName);
 
 		StepSound soundWetIceFootstep = new StepSound("stone", 1.0F, 1.0F);
 

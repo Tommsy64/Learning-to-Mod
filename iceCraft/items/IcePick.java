@@ -31,6 +31,8 @@ public class IcePick extends ItemTool {
 			EnumToolMaterial toolMaterial, Block[] blocksEffectiveAgainst) {
 
 		super(id, damageVsEntity, toolMaterial, blocksEffectiveAgainst);
+		
+		this.setUnlocalizedName(Names.icePick_unlocalizedName);
 
 		enumToolMaterial = toolMaterial;
 		this.setCreativeTab(CreativeTabs.tabAllSearch);
