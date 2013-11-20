@@ -28,8 +28,6 @@ public class Recipes {
 				new ItemStack(Items.iceShard, 1), new ItemStack(Items.iceShard, 1), new ItemStack(Items.iceShard, 1));
 		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(Items.mud, 4), new ItemStack(Block.dirt, 1), new ItemStack(Item.bucketWater));
 		
-		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(Items.mud, 1), new ItemStack(Block.dirt, 1), new ItemStack(Item.bucketWater, 1));
-		
 		//Smelting
 		GameRegistry.addSmelting(Block.ice.blockID, new ItemStack(Block.waterStill), 0.1F);
 		GameRegistry.addSmelting(Item.bucketWater.itemID, new ItemStack(Item.bucketEmpty), 0.1F);
