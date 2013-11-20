@@ -13,11 +13,12 @@ public class Mud extends Item {
 
 	public Mud(int id) {
 		super(id);
-		// TODO Auto-generated constructor stub
 
+		//Setup the Creative tabs
 		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(IceCraft.IceCraftTab);
 
+		//Set the unlocalized name
 		this.setUnlocalizedName(Names.mud_unlocalizedName);
 	}
 
