@@ -13,7 +13,6 @@ public class MudBrick extends Item {
 
 	public MudBrick(int id) {
 		super(id);
-		// TODO Auto-generated constructor stub
 		
 		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(IceCraft.IceCraftTab);
