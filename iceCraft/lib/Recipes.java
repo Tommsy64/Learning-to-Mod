@@ -1,5 +1,6 @@
 package iceCraft.lib;
 
+import iceCraft.blocks.Blocks;
 import iceCraft.items.Items;
 import iceCraft.lib.config.ConfigBooleans;
 import iceCraft.lib.fuelHandler.IceCraftFuelHandler;
