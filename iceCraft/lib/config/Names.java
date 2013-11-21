@@ -8,6 +8,19 @@ public class Names {
 	public static final String icePick_unlocalizedName = "icePick"; 
 	public static final String icePick_name = "Ice Pick";
 	
+	public static final String mud_unlocalizedName = "mud"; 
+	public static final String mud_name = "Mud";
+	
+	public static final String rawBacon_unlocalizedName = "rawBacon";
+	public static final String rawBacon_name = "Raw Bacon";
+	
+	public static final String bacon_unlocalizedName = "bacon";
+	public static final String bacon_name = "Bacon";
+	
+	public static final String mudBrick_unlocalizedName = "mudBrick";
+	public static final String mudBrick_name = "Mud Brick";
+	
+	//Blocks
 	public static final String wetIce_unlocalizedName = "wetIce"; 
 	public static final String wetIce_name = "Wet Ice";
 }

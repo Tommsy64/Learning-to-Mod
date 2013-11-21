@@ -27,10 +27,12 @@ public class IcePick extends ItemTool {
 	public static final EnumToolMaterial IcePickTool = EnumHelper
 			.addToolMaterial("IcePickTool", 1, 255, 1.0F, 2.0F, 14);
 
-	protected IcePick(int id, float dameageVsEntity,
+	protected IcePick(int id, float damageVsEntity,
 			EnumToolMaterial toolMaterial, Block[] blocksEffectiveAgainst) {
 
-		super(id, dameageVsEntity, toolMaterial, blocksEffectiveAgainst);
+		super(id, damageVsEntity, toolMaterial, blocksEffectiveAgainst);
+		
+		this.setUnlocalizedName(Names.icePick_unlocalizedName);
 
 		enumToolMaterial = toolMaterial;
 		this.setCreativeTab(CreativeTabs.tabAllSearch);
