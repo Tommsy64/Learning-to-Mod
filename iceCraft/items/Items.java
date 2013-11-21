@@ -21,18 +21,12 @@ public class Items {
 
 		rawBacon = new GenericFood(Ids.rawBacon_actual,
 				Names.rawBacon_unlocalizedName, 32, 64, 3, 0.2F, true, false);
-		// 5 is the potion effect id of Strength
-		// 120 is 2 minutes
-		// 1 is the potion amplifier
-		// Probability of effect acurring
+		// 60% chance for Poison 1 for 8 seconds
 		rawBacon.setPotionEffect(19, 8, 0, 0.6F);
 
 		bacon = new GenericFood(Ids.bacon_actual, Names.bacon_unlocalizedName,
 				16, 128, 7, 0.8F, true, true);
-		// 19 is the potion effect id of Poison
-		// 10 is 10 seconds
-		// 0 is the potion amplifier
-		// Probability of effect acurring
+		// 50% chance for Strength 1 for 2 minutes
 		bacon.setPotionEffect(5, 120, 0, 0.5F);
 	}
 
