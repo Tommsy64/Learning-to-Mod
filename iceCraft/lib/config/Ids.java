@@ -21,5 +21,8 @@ public class Ids {
 	
 	public static int wetIce_actual;
 	public static final int wetIce_default = 3841;
+	
+	public static int mudBricks_actual;
+	public static final int mudBricks_default = 3841;
 
 }
