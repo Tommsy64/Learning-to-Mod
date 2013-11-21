@@ -13,19 +13,19 @@ public class Bacon extends Item {
 
 	public Bacon(int id) {
 		super(id);
-		// TODO Auto-generated constructor stub
 		
+		//Set Creative Tabs
 		this.setCreativeTab(CreativeTabs.tabAllSearch);
-		this.setCreativeTab(IceCraft.IceCraftTab);
 		this.setCreativeTab(CreativeTabs.tabFood);
+		this.setCreativeTab(IceCraft.IceCraftTab);
 		
 		this.setUnlocalizedName(Names.bacon_unlocalizedName);
 		
 	}
 		
-		@SideOnly(Side.CLIENT)
-		public void registerIcons(IconRegister icon) {
-			itemIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
-					+ Names.bacon_unlocalizedName);
-		}
+	@SideOnly(Side.CLIENT)
+	public void registerIcons(IconRegister icon) {
+		itemIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
+				+ Names.bacon_unlocalizedName);
+	}
 }

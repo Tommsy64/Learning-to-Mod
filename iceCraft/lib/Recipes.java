@@ -1,6 +1,5 @@
 package iceCraft.lib;
 
-import iceCraft.blocks.Blocks;
 import iceCraft.items.Items;
 import iceCraft.lib.config.ConfigBooleans;
 import iceCraft.lib.fuelHandler.IceCraftFuelHandler;
@@ -40,6 +39,7 @@ public class Recipes {
 		
 		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(Block.ice, 1), new ItemStack(Items.iceShard, 1),
 				new ItemStack(Items.iceShard, 1), new ItemStack(Items.iceShard, 1), new ItemStack(Items.iceShard, 1));
+		
 		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(Items.mud, 4), new ItemStack(Block.dirt, 1), new ItemStack(Item.bucketWater));
 		
 		//Smelting
