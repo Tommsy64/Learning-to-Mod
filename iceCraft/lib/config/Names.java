@@ -23,4 +23,7 @@ public class Names {
 	//Blocks
 	public static final String wetIce_unlocalizedName = "wetIce"; 
 	public static final String wetIce_name = "Wet Ice";
+	
+	public static final String refrigerator_unlocalizedName = "refrigerator"; 
+	public static final String refrigerator_name = "Refrigerator";
 }

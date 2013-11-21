@@ -21,5 +21,7 @@ public class Ids {
 	
 	public static int wetIce_actual;
 	public static final int wetIce_default = 3841;
-
+	
+	public static int refrigerator_actual;
+	public static final int refrigerator_default = 3842;
 }
