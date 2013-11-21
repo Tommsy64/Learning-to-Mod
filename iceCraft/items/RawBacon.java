@@ -14,10 +14,12 @@ public class RawBacon extends Item {
 	public RawBacon(int id) {
 		super(id);
 
-		// Set Creative Tabs
+		// The Food Tab needs to go first, otherwise it won't appear in the
+		// IceCraftTab
+		this.setCreativeTab(CreativeTabs.tabFood);
+		
 		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(IceCraft.IceCraftTab);
-		this.setCreativeTab(CreativeTabs.tabFood);
 
 		this.setUnlocalizedName(Names.rawBacon_unlocalizedName);
 

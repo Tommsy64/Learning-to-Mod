@@ -13,16 +13,18 @@ public class Bacon extends Item {
 
 	public Bacon(int id) {
 		super(id);
-		
-		//Set Creative Tabs
-		this.setCreativeTab(CreativeTabs.tabAllSearch);
+
+		// The Food Tab needs to go first, otherwise it won't appear in the
+		// IceCraftTab
 		this.setCreativeTab(CreativeTabs.tabFood);
+
+		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(IceCraft.IceCraftTab);
-		
+
 		this.setUnlocalizedName(Names.bacon_unlocalizedName);
-		
+
 	}
-		
+
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister icon) {
 		itemIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
