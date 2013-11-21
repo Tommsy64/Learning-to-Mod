@@ -1,6 +1,5 @@
 package iceCraft.lib;
 
-import iceCraft.blocks.Blocks;
 import iceCraft.items.Items;
 import iceCraft.lib.config.ConfigBooleans;
 import iceCraft.lib.fuelHandler.IceCraftFuelHandler;
@@ -31,6 +30,7 @@ public class Recipes {
 		//Smelting
 		GameRegistry.addSmelting(Block.ice.blockID, new ItemStack(Block.waterStill), 0.1F);
 		GameRegistry.addSmelting(Item.bucketWater.itemID, new ItemStack(Item.bucketEmpty), 0.1F);
+		GameRegistry.addSmelting(Items.mud.itemID, new ItemStack(Items.mudBrick), 0.1F);
 
 		//Initiate the FuelHandler
 		GameRegistry.registerFuelHandler(new IceCraftFuelHandler());

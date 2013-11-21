@@ -16,6 +16,9 @@ public class Ids {
 	public static int bacon_actual;
 	public static final int bacon_default = 16004;
 	
+	public static int mudBrick_actual;
+	public static final int mudBrick_default = 16005;
+	
 	public static int wetIce_actual;
 	public static final int wetIce_default = 3841;
 
