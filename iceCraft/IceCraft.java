@@ -57,9 +57,9 @@ public class IceCraft {
 	@EventHandler 
 	static void init(FMLInitializationEvent event) {		
 		//Fix the itemGroup in front of creative tab name
-		LogHelper.log(Level.INFO, "Setting up language");
+		LogHelper.log(Level.INFO, "Setting up language files");
 		LanguageRegistry.instance().addStringLocalization("itemGroup." + ModInfo.NAME, "en_US", ModInfo.NAME);
-		LogHelper.log(Level.INFO, "Language loaded");
+		LogHelper.log(Level.INFO, "Language files loaded");
 		
 		LogHelper.log(Level.INFO, "Preparing items");
 		Items.init();
