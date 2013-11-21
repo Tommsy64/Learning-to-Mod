@@ -10,6 +10,7 @@ public class Items {
 
 	public static Item iceShard;
 	public static Item mud;
+	public static Item mudBrick;
 
 	// Foods
 	public static ItemFood rawBacon;
@@ -18,6 +19,7 @@ public class Items {
 	public static void init() {
 		iceShard = new IceShard(Ids.iceShard_actual);
 		mud = new Mud(Ids.mud_actual);
+		mudBrick = new MudBrick(Ids.mudBrick_actual);
 
 		rawBacon = new GenericFood(Ids.rawBacon_actual,
 				Names.rawBacon_unlocalizedName, 32, 64, 3, 0.2F, true, false);
@@ -35,5 +37,6 @@ public class Items {
 		LanguageRegistry.addName(mud, Names.mud_name);
 		LanguageRegistry.addName(rawBacon, Names.rawBacon_name);
 		LanguageRegistry.addName(bacon, Names.bacon_name);
+		LanguageRegistry.addName(mudBrick, Names.mudBrick_name);
 	}
 }

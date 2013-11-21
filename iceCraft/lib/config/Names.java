@@ -17,6 +17,8 @@ public class Names {
 	public static final String bacon_unlocalizedName = "bacon";
 	public static final String bacon_name = "Bacon";
 	
+	public static final String mudBrick_unlocalizedName = "mudBrick";
+	public static final String mudBrick_name = "Mud Brick";
 	
 	//Blocks
 	public static final String wetIce_unlocalizedName = "wetIce"; 

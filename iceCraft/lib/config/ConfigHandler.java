@@ -26,6 +26,9 @@ public class ConfigHandler {
 		Ids.mud_actual = config.getItem(config.CATEGORY_ITEM, Names.mud_name,
 				Ids.mud_default).getInt() - 256;
 		
+		Ids.mudBrick_actual = config.getItem(config.CATEGORY_ITEM, Names.mudBrick_name,
+				Ids.mudBrick_actual).getInt() - 256;
+		
 		Ids.bacon_actual = config.getItem(config.CATEGORY_ITEM, Names.bacon_name,
 				Ids.bacon_default).getInt() - 256;
 		
