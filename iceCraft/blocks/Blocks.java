@@ -17,6 +17,7 @@ public class Blocks {
 		refrigerator = new Refrigerator(Ids.refrigerator_actual);
 		
 		GameRegistry.registerBlock(wetIce, Names.wetIce_name);
+		GameRegistry.registerBlock(refrigerator, Names.refrigerator_name);
 	}
 	
 	public static void addNames() { 
