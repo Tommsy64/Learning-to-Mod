@@ -15,6 +15,10 @@ public class Refrigerator extends Block {
 		
 		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(IceCraft.IceCraftTab);
+		
+		this.setHardness(5F);
+		this.setResistance(10F);
+		
 	}
 
 }
