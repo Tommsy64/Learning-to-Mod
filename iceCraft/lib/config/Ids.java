@@ -1,6 +1,8 @@
 package iceCraft.lib.config;
 
 public class Ids {
+	
+	//Items
 	public static int iceShard_actual;
 	public static final int iceShard_default = 16000;
 	
@@ -19,10 +21,12 @@ public class Ids {
 	public static int mudBrick_actual;
 	public static final int mudBrick_default = 16005;
 	
+	
+	//Blocks
 	public static int wetIce_actual;
 	public static final int wetIce_default = 3841;
 	
-	public static int mudBricks_actual;
-	public static final int mudBricks_default = 3841;
+	public static int mudBrickBlock_actual;
+	public static final int mudBrickBlock_default = 3842;
 
 }

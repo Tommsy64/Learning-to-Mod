@@ -11,9 +11,9 @@ import net.minecraft.util.Icon;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class MudBricks extends Block {
+public class MudBrickBlock extends Block {
 	
-	public MudBricks(int id) {
+	public MudBrickBlock(int id) {
 		super(id, Material.rock);
 		
 		this.setHardness(2.0F);
@@ -31,7 +31,7 @@ public class MudBricks extends Block {
 		public static Icon topIcon;
 		
 		@SideOnly(Side.CLIENT)
-		public static Icon sideAndBottomIcon;
+		public static Icon sideIcon;
 		
 		//Get Icons
 		@Override
@@ -39,8 +39,8 @@ public class MudBricks extends Block {
 		public void registerIcons(IconRegister icon) {
 			topIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":" 
 					+ Names.mudBricks_unlocalizedName + "_top");
-			sideAndBottomIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
-					+ Names.mudBricks_unlocalizedName);
+			sideIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
+					+ Names.mudBricks_unlocalizedName + "_side");
 		}
 		
 	

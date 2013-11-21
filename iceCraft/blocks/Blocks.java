@@ -14,7 +14,7 @@ public class Blocks {
 	
 	public static void init() { 
 		wetIce = new WetIce(Ids.wetIce_actual);
-		mudBricks = new MudBricks(Ids.mudBricks_actual);
+		mudBricks = new MudBrickBlock(Ids.mudBrickBlock_actual);
 		GameRegistry.registerBlock(wetIce, Names.wetIce_name);
 		GameRegistry.registerBlock(mudBricks, Names.mudBricks_name);
 	}
