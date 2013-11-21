@@ -24,5 +24,4 @@ public class MudBrick extends Item {
 	public void registerIcons(IconRegister icon) {
 		itemIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":" + Names.mudBrick_unlocalizedName);
 	}
-	
 }

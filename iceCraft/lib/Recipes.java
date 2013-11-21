@@ -38,6 +38,11 @@ public class Recipes {
 				Character.valueOf('S'), Items.iceShard,
 				Character.valueOf('B'), Item.glassBottle);
 		
+		CraftingManager.getInstance().addRecipe(new ItemStack(Blocks.mudBrickBlock, 4),
+				"BB",
+				"BB",
+				Character.valueOf('B'), Items.mudBrick);
+		
 		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(Block.ice, 1), new ItemStack(Items.iceShard, 1),
 				new ItemStack(Items.iceShard, 1), new ItemStack(Items.iceShard, 1), new ItemStack(Items.iceShard, 1));
 		
@@ -47,7 +52,6 @@ public class Recipes {
 		GameRegistry.addSmelting(Block.ice.blockID, new ItemStack(Block.waterStill), 0.1F);
 		GameRegistry.addSmelting(Item.bucketWater.itemID, new ItemStack(Item.bucketEmpty), 0.1F);
 		GameRegistry.addSmelting(Items.mud.itemID, new ItemStack(Items.mudBrick), 0.1F);
-		GameRegistry.addSmelting(Items.mud.itemID, new ItemStack(Block.dirt), 0.1F);
 		GameRegistry.addSmelting(Items.rawBacon.itemID, new ItemStack(Items.bacon), 0.5F);
 
 		//Initiate the FuelHandler
