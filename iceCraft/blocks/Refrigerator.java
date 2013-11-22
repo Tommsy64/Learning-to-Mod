@@ -2,6 +2,7 @@ package iceCraft.blocks;
 
 import iceCraft.IceCraft;
 import iceCraft.lib.ModInfo;
+import iceCraft.lib.config.Ids;
 import iceCraft.lib.config.Names;
 import iceCraft.tileentity.TileEntityRefrigerator;
 import net.minecraft.block.Block;
@@ -51,8 +52,8 @@ public class Refrigerator extends BlockContainer {
 			 * player/world to open GUI, xyz coords of the block to open the GUI
 			 * on
 			 */
-			FMLNetworkHandler.openGui(player, IceCraft.instance, 0, world, x,
-					y, z);
+			FMLNetworkHandler.openGui(player, IceCraft.instance,
+					Ids.refrigerator_gui, world, x, y, z);
 		}
 		// We want the GUI to open regardless whether it is the client or server
 		return true;

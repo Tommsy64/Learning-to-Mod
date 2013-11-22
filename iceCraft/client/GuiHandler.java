@@ -3,6 +3,7 @@ package iceCraft.client;
 import iceCraft.IceCraft;
 import iceCraft.client.container.ContainerRefrigerator;
 import iceCraft.client.gui.GuiRefrigerator;
+import iceCraft.lib.config.Ids;
 import iceCraft.tileentity.TileEntityRefrigerator;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
@@ -23,7 +24,7 @@ public class GuiHandler implements IGuiHandler {
 		TileEntity entity = world.getBlockTileEntity(x, y, z);
 
 		switch (id) {
-		case 0:
+		case Ids.refrigerator_gui:
 			if (entity != null && entity instanceof TileEntityRefrigerator)
 				return new ContainerRefrigerator(player.inventory,
 						(TileEntityRefrigerator) entity);
@@ -40,7 +41,7 @@ public class GuiHandler implements IGuiHandler {
 		TileEntity entity = world.getBlockTileEntity(x, y, z);
 
 		switch (id) {
-		case 0:
+		case Ids.refrigerator_gui:
 			if (entity != null && entity instanceof TileEntityRefrigerator)
 				return new GuiRefrigerator(player.inventory,
 						(TileEntityRefrigerator) entity);
