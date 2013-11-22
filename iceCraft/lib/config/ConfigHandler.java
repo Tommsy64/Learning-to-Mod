@@ -40,7 +40,7 @@ public class ConfigHandler {
 				Names.wetIce_name, Ids.wetIce_default).getInt() - 256;
 		
 		Ids.mudBrickBlock_actual = config.getItem(config.CATEGORY_BLOCK,
-				Names.mudBricks_name, Ids.mudBrickBlock_default).getInt() - 256;
+				Names.mudBrickBlock_name, Ids.mudBrickBlock_default).getInt() - 256;
 
 		// Booleans
 		ConfigBooleans.enableBurnables = config.get(BOOLEANS,

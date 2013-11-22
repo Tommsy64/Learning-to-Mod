@@ -24,6 +24,6 @@ public class Names {
 	public static final String wetIce_unlocalizedName = "wetIce"; 
 	public static final String wetIce_name = "Wet Ice";
 	
-	public static final String mudBricks_unlocalizedName = "mudBricks";
-	public static final String mudBricks_name = "Mud Bricks";
+	public static final String mudBrickBlock_unlocalizedName = "mudBrickBlock";
+	public static final String mudBrickBlock_name = "Mud Bricks";
 }

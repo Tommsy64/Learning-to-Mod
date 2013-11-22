@@ -16,11 +16,11 @@ public class Blocks {
 		wetIce = new WetIce(Ids.wetIce_actual);
 		mudBrickBlock = new MudBrickBlock(Ids.mudBrickBlock_actual);
 		GameRegistry.registerBlock(wetIce, Names.wetIce_name);
-		GameRegistry.registerBlock(mudBrickBlock, Names.mudBricks_name);
+		GameRegistry.registerBlock(mudBrickBlock, Names.mudBrickBlock_name);
 	}
 	
 	public static void addNames() { 
 		LanguageRegistry.addName(wetIce, Names.wetIce_name);
-		LanguageRegistry.addName(mudBrickBlock, Names.mudBricks_name);
+		LanguageRegistry.addName(mudBrickBlock, Names.mudBrickBlock_name);
 	}
 }

@@ -17,7 +17,7 @@ public class MudBrickBlock extends Block {
 		super(id, Material.rock);
 		
 		this.setHardness(2.0F);
-		this.setUnlocalizedName(Names.mudBricks_unlocalizedName);
+		this.setUnlocalizedName(Names.mudBrickBlock_unlocalizedName);
 		
 		this.setStepSound(Block.soundStoneFootstep);
 		
@@ -38,10 +38,8 @@ public class MudBrickBlock extends Block {
 		@SideOnly(Side.CLIENT)
 		public void registerIcons(IconRegister icon) {
 			topIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":" 
-					+ Names.mudBricks_unlocalizedName + "_top");
+					+ Names.mudBrickBlock_unlocalizedName);
 			sideIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
-					+ Names.mudBricks_unlocalizedName + "_side");
+					+ Names.mudBrickBlock_unlocalizedName);
 		}
-		
-	
 }
