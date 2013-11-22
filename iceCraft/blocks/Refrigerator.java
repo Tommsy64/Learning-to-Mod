@@ -3,17 +3,20 @@ package iceCraft.blocks;
 import iceCraft.IceCraft;
 import iceCraft.lib.ModInfo;
 import iceCraft.lib.config.Names;
+import iceCraft.tileentity.TileEntityRefrigerator;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Icon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
+import cpw.mods.fml.common.network.FMLNetworkHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -34,7 +37,25 @@ public class Refrigerator extends BlockContainer {
 
 	@Override
 	public TileEntity createNewTileEntity(World world) {
-		return null;
+		return new TileEntityRefrigerator();
+	}
+
+	@Override
+	public boolean onBlockActivated(World world, int x, int y, int z,
+			EntityPlayer player, int side, float hitX, float hitY, float hitZ) {
+		// We want the GUI opening to be handled on the serverside
+		if (!world.isRemote) {
+
+			/*
+			 * Play to open GUI on, Mod instance, ID of the GUI, world of the
+			 * player/world to open GUI, xyz coords of the block to open the GUI
+			 * on
+			 */
+			FMLNetworkHandler.openGui(player, IceCraft.instance, 0, world, x,
+					y, z);
+		}
+		// We want the GUI to open regardless whether it is the client or server
+		return true;
 	}
 
 	@Override

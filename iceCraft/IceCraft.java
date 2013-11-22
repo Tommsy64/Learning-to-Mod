@@ -8,7 +8,6 @@ import iceCraft.lib.LogHelper;
 import iceCraft.lib.ModInfo;
 import iceCraft.lib.Recipes;
 import iceCraft.lib.config.ConfigHandler;
-import iceCraft.lib.fuelHandler.IceCraftFuelHandler;
 import iceCraft.proxies.CommonProxy;
 import iceCraft.sound.Sound;
 
@@ -17,12 +16,12 @@ import java.util.logging.Level;
 import net.minecraft.creativetab.CreativeTabs;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
-import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 
@@ -30,6 +29,9 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 @NetworkMod ( channels = {ModInfo.CHANNEL}, clientSideRequired = true, serverSideRequired = true )
 
 public class IceCraft {
+	
+	@Instance(ModInfo.ID)
+	public static IceCraft instance;
 	
 	@SidedProxy( clientSide = ModInfo.PROXY_LOCATION + ".ClientProxy", serverSide = ModInfo.PROXY_LOCATION + ".CommonProxy")
 	public static CommonProxy proxy;
