@@ -26,8 +26,4 @@ public class Names {
 	
 	public static final String refrigerator_unlocalizedName = "refrigerator"; 
 	public static final String refrigerator_name = "Refrigerator";
-	
-	//TileEntities
-	 
-	public static final String refrigerator_tileEntity = "Refrigerator";	
 }

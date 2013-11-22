@@ -66,7 +66,7 @@ public class TileEntityRefrigerator extends TileEntity implements IInventory {
 
 	@Override
 	public String getInvName() {
-		return Names.refrigerator_tileEntity;
+		return Names.refrigerator_unlocalizedName;
 	}
 
 	/*
@@ -88,7 +88,6 @@ public class TileEntityRefrigerator extends TileEntity implements IInventory {
 
 	@Override
 	public boolean isUseableByPlayer(EntityPlayer player) {
-		// Pythagorean theorem is actually useful in life!!!!!
 		return player
 				.getDistanceSq(xCoord + 0.5D, yCoord + 0.5D, zCoord + 0.5D) <= 64;
 	}
@@ -96,13 +95,11 @@ public class TileEntityRefrigerator extends TileEntity implements IInventory {
 	@Override
 	public void openChest() {
 		// TODO Auto-generated method stub
-
 	}
 
 	@Override
 	public void closeChest() {
 		// TODO Auto-generated method stub
-
 	}
 
 	@Override

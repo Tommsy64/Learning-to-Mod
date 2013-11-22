@@ -1,6 +1,7 @@
 package iceCraft;
 
 import iceCraft.blocks.Blocks;
+import iceCraft.client.sound.Sound;
 import iceCraft.items.Items;
 import iceCraft.items.Tools;
 import iceCraft.lib.IceCraftTab;
@@ -9,7 +10,6 @@ import iceCraft.lib.ModInfo;
 import iceCraft.lib.Recipes;
 import iceCraft.lib.config.ConfigHandler;
 import iceCraft.proxies.CommonProxy;
-import iceCraft.sound.Sound;
 
 import java.util.logging.Level;
 
