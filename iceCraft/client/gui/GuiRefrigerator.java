@@ -1,5 +1,6 @@
 package iceCraft.client.gui;
 
+import iceCraft.client.container.ContainerRefrigerator;
 import iceCraft.lib.ModInfo;
 import iceCraft.lib.config.Names;
 import iceCraft.tileentity.TileEntityRefrigerator;
