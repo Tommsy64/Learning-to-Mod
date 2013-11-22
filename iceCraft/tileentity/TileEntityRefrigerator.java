@@ -11,7 +11,7 @@ public class TileEntityRefrigerator extends TileEntity implements IInventory {
 	private ItemStack[] inventory;
 
 	public TileEntityRefrigerator() {
-		inventory = new ItemStack[1];
+		inventory = new ItemStack[9];
 	}
 
 	@Override
