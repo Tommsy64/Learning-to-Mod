@@ -80,6 +80,7 @@ public class IceCraft {
 		LogHelper.log(Level.INFO, "Preparing Blocks...");
 		Blocks.init();
 		Blocks.addNames();
+		Blocks.registerTileEntities();
 		LogHelper.log(Level.INFO, "Blocks Loaded");
 
 		LogHelper.log(Level.INFO, "Preparing Tools...");

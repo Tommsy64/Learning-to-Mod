@@ -1,5 +1,8 @@
 package iceCraft.blocks;
 
+import java.util.logging.Level;
+
+import iceCraft.lib.LogHelper;
 import iceCraft.lib.config.Ids;
 import iceCraft.lib.config.Names;
 import iceCraft.tileentity.TileEntityRefrigerator;
