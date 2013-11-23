@@ -22,9 +22,9 @@ public class WetIce extends Block {
 		this.slipperiness = 1.05F;
 		this.setUnlocalizedName(Names.wetIce_unlocalizedName);
 
-		StepSound soundWetIceFootstep = new StepSound("stone", 1.0F, 1.0F);
+		StepSound soundWetIceFootstep = new StepSound("wetIceFootstep", 1.0F, 1.0F);
 
-		this.setStepSound(Block.soundSnowFootstep);
+		this.setStepSound(soundWetIceFootstep);
 
 		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(CreativeTabs.tabBlock);

@@ -39,7 +39,7 @@ public class GenericFood extends ItemFood {
 	}
 
 	@Override
-	public int getMaxItemUseDuration(ItemStack itemStacj) {
+	public int getMaxItemUseDuration(ItemStack itemStack) {
 		return this.eatTime;
 	}
 

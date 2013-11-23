@@ -13,15 +13,16 @@ public class MudBrick extends Item {
 
 	public MudBrick(int id) {
 		super(id);
-		
+
 		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(IceCraft.IceCraftTab);
-		
-		this.setUnlocalizedName(Names.mudBrick_unlocalizedName);	
+
+		this.setUnlocalizedName(Names.mudBrick_unlocalizedName);
 	}
-	
+
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister icon) {
-		itemIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":" + Names.mudBrick_unlocalizedName);
+		itemIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
+				+ Names.mudBrick_unlocalizedName);
 	}
 }

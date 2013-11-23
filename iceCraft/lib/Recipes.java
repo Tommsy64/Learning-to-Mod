@@ -36,7 +36,15 @@ public class Recipes {
 				"SBS",
 				"SSS",
 				Character.valueOf('S'), Items.iceShard,
-				Character.valueOf('B'), Item.glassBottle);
+				Character.valueOf('B'), Item.potion);
+		
+		CraftingManager.getInstance().addRecipe(new ItemStack(Blocks.refrigerator, 1),
+				"III",
+				"ICI",
+				"BBB",
+				Character.valueOf('I'), Item.ingotIron,
+				Character.valueOf('C'), Block.ice,
+				Character.valueOf('B'), Block.blockIron);
 		
 		CraftingManager.getInstance().addRecipe(new ItemStack(Blocks.mudBrickBlock, 4),
 				"BB",
@@ -67,10 +75,15 @@ public class Recipes {
 			IceCraftFuelHandler.addItem(Item.doorWood.itemID, 600);
 			IceCraftFuelHandler.addItem(Item.painting.itemID, 100);
 			IceCraftFuelHandler.addItem(Item.paper.itemID, 125);
-			IceCraftFuelHandler.addItem(Item.book.itemID, 400);
+			IceCraftFuelHandler.addItem(Item.book.itemID, 200);
 			IceCraftFuelHandler.addItem(Item.bed.itemID, 250);
 			IceCraftFuelHandler.addItem(Item.blazePowder.itemID, 1200);
 			IceCraftFuelHandler.addItem(Item.map.itemID, 200);
+			IceCraftFuelHandler.addItem(Item.enchantedBook.itemID, 250);
+			IceCraftFuelHandler.addItem(Item.reed.itemID, 200);
+			IceCraftFuelHandler.addItem(Item.writableBook.itemID, 150);
+			IceCraftFuelHandler.addItem(Item.itemFrame.itemID, 100);
+			IceCraftFuelHandler.addItem(Item.writtenBook.itemID, 210);
 			LogHelper.log(Level.INFO, "Enabled More Burnables");
 		}
 	}
