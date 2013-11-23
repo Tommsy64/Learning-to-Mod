@@ -1,4 +1,4 @@
-package iceCraft.sound;
+package iceCraft.client.sound;
 
 import iceCraft.lib.LogHelper;
 

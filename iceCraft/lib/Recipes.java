@@ -38,6 +38,14 @@ public class Recipes {
 				Character.valueOf('S'), Items.iceShard,
 				Character.valueOf('B'), Item.potion);
 		
+		CraftingManager.getInstance().addRecipe(new ItemStack(Blocks.refrigerator, 1),
+				"III",
+				"ICI",
+				"BBB",
+				Character.valueOf('I'), Item.ingotIron,
+				Character.valueOf('C'), Block.ice,
+				Character.valueOf('B'), Block.blockIron);
+		
 		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(Block.ice, 1), new ItemStack(Items.iceShard, 1),
 				new ItemStack(Items.iceShard, 1), new ItemStack(Items.iceShard, 1), new ItemStack(Items.iceShard, 1));
 		

@@ -1,8 +1,8 @@
 package iceCraft.proxies;
 
+import iceCraft.client.sound.Sound;
+import iceCraft.client.sound.SoundHandler;
 import iceCraft.lib.LogHelper;
-import iceCraft.sound.Sound;
-import iceCraft.sound.SoundHandler;
 
 import java.util.logging.Level;
 
