@@ -38,8 +38,8 @@ public class MudBrickBlock extends Block {
 		@SideOnly(Side.CLIENT)
 		public void registerIcons(IconRegister icon) {
 			topIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":" 
-					+ Names.mudBrickBlock_unlocalizedName);
+					+ Names.mudBrickBlock_unlocalizedName + "_top");
 			sideIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
-					+ Names.mudBrickBlock_unlocalizedName);
+					+ Names.mudBrickBlock_unlocalizedName + "_side");
 		}
 }
