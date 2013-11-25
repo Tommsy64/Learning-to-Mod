@@ -29,6 +29,6 @@ public class Ids {
 	public static final int mudBrickBlock_default = 3842;
 
 	public static int refrigerator_actual;
-	public static final int refrigerator_default = 3842;
+	public static final int refrigerator_default = 3843;
 	public static final int refrigerator_gui = 0;
 }
