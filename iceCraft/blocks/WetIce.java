@@ -22,7 +22,8 @@ public class WetIce extends Block {
 		this.slipperiness = 1.05F;
 		this.setUnlocalizedName(Names.wetIce_unlocalizedName);
 
-		StepSound soundWetIceFootstep = new StepSound("wetIceFootstep", 1.0F, 1.0F);
+		StepSound soundWetIceFootstep = new StepSound("wetIceFootstep", 1.0F,
+				1.0F);
 
 		this.setStepSound(soundWetIceFootstep);
 
@@ -31,15 +32,14 @@ public class WetIce extends Block {
 		this.setCreativeTab(IceCraft.IceCraftTab);
 	}
 
-	
-	//Icons
+	// Icons
 	@SideOnly(Side.CLIENT)
 	public static Icon topIcon;
 
 	@SideOnly(Side.CLIENT)
 	public static Icon sideAndBottomIcon;
 
-	//Get Icons
+	// Get Icons
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister icon) {
@@ -49,7 +49,7 @@ public class WetIce extends Block {
 				+ Names.wetIce_unlocalizedName);
 	}
 
-	//Return Icons
+	// Return Icons
 	@Override
 	@SideOnly(Side.CLIENT)
 	public Icon getIcon(int side, int metadata) {

@@ -1,12 +1,8 @@
 package iceCraft.blocks;
 
-import iceCraft.lib.LogHelper;
 import iceCraft.lib.config.Ids;
 import iceCraft.lib.config.Names;
 import iceCraft.tileentity.TileEntityRefrigerator;
-
-import java.util.logging.Level;
-
 import net.minecraft.block.Block;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
@@ -19,13 +15,11 @@ public class Blocks {
 
 	public static void init() {
 		wetIce = new WetIce(Ids.wetIce_actual);
-		LogHelper.log(Level.INFO, Ids.mudBrickBlock_actual);
 		mudBrickBlock = new MudBrickBlock(Ids.mudBrickBlock_actual);
 		refrigerator = new Refrigerator(Ids.refrigerator_actual);
 
 		GameRegistry.registerBlock(wetIce, Names.wetIce_name);
 		GameRegistry.registerBlock(refrigerator, Names.refrigerator_name);
-		GameRegistry.registerBlock(wetIce, Names.wetIce_name);
 		GameRegistry.registerBlock(mudBrickBlock, Names.mudBrickBlock_name);
 	}
 
