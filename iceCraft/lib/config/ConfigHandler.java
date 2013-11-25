@@ -34,6 +34,9 @@ public class ConfigHandler {
 		
 		Ids.rawBacon_actual = config.getItem(config.CATEGORY_ITEM, Names.rawBacon_name,
 				Ids.rawBacon_default).getInt() - 256;
+		
+		Ids.iceSword_actual = config.getItem(config.CATEGORY_ITEM, Names.iceSword_name,
+				Ids.iceSword_default).getInt() - 256;
 
 		// Blocks
 		Ids.wetIce_actual = config.getItem(config.CATEGORY_BLOCK,

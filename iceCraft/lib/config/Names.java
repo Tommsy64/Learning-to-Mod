@@ -20,6 +20,9 @@ public class Names {
 	public static final String mudBrick_unlocalizedName = "mudBrick";
 	public static final String mudBrick_name = "Mud Brick";
 	
+	public static final String iceSword_unlocalizedName = "iceSword";
+	public static final String iceSword_name = "Ice Sword";
+	
 	//Blocks
 	public static final String wetIce_unlocalizedName = "wetIce"; 
 	public static final String wetIce_name = "Wet Ice";

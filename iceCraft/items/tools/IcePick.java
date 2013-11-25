@@ -1,43 +1,23 @@
-package iceCraft.items;
+package iceCraft.items.tools;
 
-import iceCraft.IceCraft;
+import iceCraft.items.tools.types.CustomTool;
 import iceCraft.lib.ModInfo;
 import iceCraft.lib.config.Names;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.EnumAction;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemTool;
 import net.minecraft.world.World;
-import net.minecraftforge.common.EnumHelper;
-import cpw.mods.fml.common.network.Player;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class IcePick extends ItemTool {
-
-	EnumToolMaterial enumToolMaterial;
-
-	// EnumHelper.addToolMaterial(name, harvestLevel, maxUses, efficiency,
-	// damage, enchantability)
-	public static final EnumToolMaterial IcePickTool = EnumHelper
-			.addToolMaterial("IcePickTool", 1, 255, 1.0F, 2.0F, 14);
+public class IcePick extends CustomTool {
 
 	protected IcePick(int id, float damageVsEntity,
 			EnumToolMaterial toolMaterial, Block[] blocksEffectiveAgainst) {
-
 		super(id, damageVsEntity, toolMaterial, blocksEffectiveAgainst);
-		
 		this.setUnlocalizedName(Names.icePick_unlocalizedName);
-
-		enumToolMaterial = toolMaterial;
-		this.setCreativeTab(CreativeTabs.tabAllSearch);
-		this.setCreativeTab(IceCraft.IceCraftTab);
-		this.setMaxStackSize(1);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -55,11 +35,11 @@ public class IcePick extends ItemTool {
 
 	public boolean onBlockDestroyed(ItemStack stack, World world, int par3,
 			int x, int y, int z, EntityLivingBase entityLivingBase) {
-		
+
 		if (world.getBlockId(x, y, z) == Block.ice.blockID) {
 			return true;
 		}
-		
+
 		if ((double) Block.blocksList[par3].getBlockHardness(world, x, y, z) != 0.0D
 				&& (double) Block.blocksList[par3].getBlockHardness(world, x,
 						y, z) != 0.1D) {
