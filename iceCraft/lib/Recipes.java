@@ -46,6 +46,11 @@ public class Recipes {
 				Character.valueOf('C'), Block.ice,
 				Character.valueOf('B'), Block.blockIron);
 		
+		CraftingManager.getInstance().addRecipe(new ItemStack(Blocks.mudBrickBlock, 4),
+				"BB",
+				"BB",
+				Character.valueOf('B'), Items.mudBrick);
+		
 		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(Block.ice, 1), new ItemStack(Items.iceShard, 1),
 				new ItemStack(Items.iceShard, 1), new ItemStack(Items.iceShard, 1), new ItemStack(Items.iceShard, 1));
 		

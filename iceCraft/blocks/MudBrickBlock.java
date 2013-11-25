@@ -4,7 +4,6 @@ import iceCraft.IceCraft;
 import iceCraft.lib.ModInfo;
 import iceCraft.lib.config.Names;
 import net.minecraft.block.Block;
-import net.minecraft.block.StepSound;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
@@ -12,20 +11,15 @@ import net.minecraft.util.Icon;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class WetIce extends Block {
+public class MudBrickBlock extends Block {
 
-	public WetIce(int id) {
-		super(id, Material.ice);
+	public MudBrickBlock(int id) {
+		super(id, Material.rock);
 
-		this.setHardness(0.5F);
-		this.setLightOpacity(3);
-		this.slipperiness = 1.05F;
-		this.setUnlocalizedName(Names.wetIce_unlocalizedName);
+		this.setHardness(2.0F);
+		this.setUnlocalizedName(Names.mudBrickBlock_unlocalizedName);
 
-		StepSound soundWetIceFootstep = new StepSound("wetIceFootstep", 1.0F,
-				1.0F);
-
-		this.setStepSound(soundWetIceFootstep);
+		this.setStepSound(Block.soundStoneFootstep);
 
 		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(CreativeTabs.tabBlock);
@@ -37,16 +31,16 @@ public class WetIce extends Block {
 	public static Icon topIcon;
 
 	@SideOnly(Side.CLIENT)
-	public static Icon sideAndBottomIcon;
+	public static Icon sideIcon;
 
 	// Get Icons
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister icon) {
 		topIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
-				+ Names.wetIce_unlocalizedName + "_top");
-		sideAndBottomIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
-				+ Names.wetIce_unlocalizedName);
+				+ Names.mudBrickBlock_unlocalizedName + "_top");
+		sideIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
+				+ Names.mudBrickBlock_unlocalizedName + "_side");
 	}
 
 	// Return Icons
@@ -56,7 +50,7 @@ public class WetIce extends Block {
 		if (side == 1) {
 			return topIcon;
 		} else {
-			return sideAndBottomIcon;
+			return sideIcon;
 		}
 	}
 }
