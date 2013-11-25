@@ -42,4 +42,15 @@ public class MudBrickBlock extends Block {
 		sideIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
 				+ Names.mudBrickBlock_unlocalizedName + "_side");
 	}
+
+	// Return Icons
+	@Override
+	@SideOnly(Side.CLIENT)
+	public Icon getIcon(int side, int metadata) {
+		if (side == 1) {
+			return topIcon;
+		} else {
+			return sideIcon;
+		}
+	}
 }
