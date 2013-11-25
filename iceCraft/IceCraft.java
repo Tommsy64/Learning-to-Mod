@@ -97,5 +97,5 @@ public class IceCraft {
 	static void postInit(FMLPostInitializationEvent event) {
 
 	}
-
+	
 }
