@@ -10,8 +10,8 @@ public class CustomSword extends ItemSword {
 	protected CustomSword(int id, EnumToolMaterial toolMaterial) {
 		super(id, toolMaterial);
 		this.setCreativeTab(CreativeTabs.tabAllSearch);
-		this.setCreativeTab(IceCraft.IceCraftTab);
 		this.setCreativeTab(CreativeTabs.tabCombat);
+		this.setCreativeTab(IceCraft.IceCraftTab);
 		this.setMaxStackSize(1);
 	}
 

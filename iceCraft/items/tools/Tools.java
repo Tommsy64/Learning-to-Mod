@@ -8,7 +8,7 @@ import iceCraft.items.tools.types.ice.IceSword;
 import iceCraft.lib.config.Ids;
 import iceCraft.lib.config.Names;
 import net.minecraft.block.Block;
-import net.minecraft.item.ItemSword;
+import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemTool;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -16,10 +16,12 @@ public class Tools {
 
 	// Tools
 	public static ItemTool icePick;
+
+	// Ice set
 	public static IceSword iceSword;
 	public static IcePickaxe icePickaxe;
 	public static IceAxe iceAxe;
-	public static ItemSword iceSpade;
+	public static ItemSpade iceSpade;
 
 	public static void init() {
 		icePick = new IcePick(Ids.icePick_actual, 4,

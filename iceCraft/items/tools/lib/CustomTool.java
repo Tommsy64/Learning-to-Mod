@@ -12,8 +12,8 @@ public class CustomTool extends ItemTool {
 			EnumToolMaterial toolMaterial, Block[] blocksEffectiveAgainst) {
 		super(id, damageVsEntity, toolMaterial, blocksEffectiveAgainst);
 		this.setCreativeTab(CreativeTabs.tabAllSearch);
-		this.setCreativeTab(IceCraft.IceCraftTab);
 		this.setCreativeTab(CreativeTabs.tabTools);
+		this.setCreativeTab(IceCraft.IceCraftTab);
 		this.setMaxStackSize(1);
 	}
 
