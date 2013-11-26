@@ -4,7 +4,7 @@ import iceCraft.blocks.Blocks;
 import iceCraft.client.GuiHandler;
 import iceCraft.client.sound.Sound;
 import iceCraft.items.Items;
-import iceCraft.items.Tools;
+import iceCraft.items.tools.Tools;
 import iceCraft.lib.IceCraftTab;
 import iceCraft.lib.LogHelper;
 import iceCraft.lib.ModInfo;
@@ -97,5 +97,5 @@ public class IceCraft {
 	static void postInit(FMLPostInitializationEvent event) {
 
 	}
-
+	
 }

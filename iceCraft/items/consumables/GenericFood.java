@@ -1,4 +1,4 @@
-package iceCraft.items;
+package iceCraft.items.consumables;
 
 import iceCraft.IceCraft;
 import iceCraft.lib.ModInfo;

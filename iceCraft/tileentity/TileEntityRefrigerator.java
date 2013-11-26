@@ -149,5 +149,5 @@ public class TileEntityRefrigerator extends TileEntity implements IInventory {
 	public boolean isItemValidForSlot(int i, ItemStack itemstack) {
 		return true;
 	}
-
+	
 }
