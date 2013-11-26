@@ -1,17 +1,17 @@
 package iceCraft.items.tools.lib;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import iceCraft.IceCraft;
 import iceCraft.lib.ModInfo;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumToolMaterial;
-import net.minecraft.item.ItemSword;
+import net.minecraft.item.ItemHoe;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
-public class CustomSword extends ItemSword {
+public class CustomHoe extends ItemHoe {
 
-	protected CustomSword(int id, EnumToolMaterial toolMaterial) {
+	protected CustomHoe(int id, EnumToolMaterial toolMaterial) {
 		super(id, toolMaterial);
 		this.setCreativeTab(IceCraft.IceCraftTab);
 	}

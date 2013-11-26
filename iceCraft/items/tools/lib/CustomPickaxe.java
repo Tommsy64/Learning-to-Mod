@@ -13,10 +13,7 @@ public class CustomPickaxe extends ItemPickaxe {
 
 	protected CustomPickaxe(int id, EnumToolMaterial toolMaterial) {
 		super(id, toolMaterial);
-		this.setCreativeTab(CreativeTabs.tabAllSearch);
-		this.setCreativeTab(CreativeTabs.tabTools);
 		this.setCreativeTab(IceCraft.IceCraftTab);
-		this.setMaxStackSize(1);
 	}
 
 	@SideOnly(Side.CLIENT)
