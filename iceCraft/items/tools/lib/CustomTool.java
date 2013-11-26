@@ -24,6 +24,6 @@ public class CustomTool extends ItemTool {
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister icon) {
 		itemIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":" + "tools/"
-				+ this.getUnlocalizedName());
+				+ this.getUnlocalizedName().replace("item.", ""));
 	}
 }
