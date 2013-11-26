@@ -11,6 +11,7 @@ public class CustomSword extends ItemSword {
 		super(id, toolMaterial);
 		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(IceCraft.IceCraftTab);
+		this.setCreativeTab(CreativeTabs.tabCombat);
 		this.setMaxStackSize(1);
 	}
 

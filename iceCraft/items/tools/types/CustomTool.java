@@ -13,6 +13,7 @@ public class CustomTool extends ItemTool {
 		super(id, damageVsEntity, toolMaterial, blocksEffectiveAgainst);
 		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(IceCraft.IceCraftTab);
+		this.setCreativeTab(CreativeTabs.tabTools);
 		this.setMaxStackSize(1);
 	}
 
