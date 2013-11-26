@@ -1,5 +1,6 @@
 package iceCraft.items;
 
+import iceCraft.items.consumables.GenericFood;
 import iceCraft.lib.config.Ids;
 import iceCraft.lib.config.Names;
 import net.minecraft.item.Item;

@@ -35,6 +35,22 @@ public class ConfigHandler {
 		Ids.rawBacon_actual = config.getItem(config.CATEGORY_ITEM,
 				Names.rawBacon_name, Ids.rawBacon_default).getInt() - 256;
 
+		// Ice tool set
+		Ids.iceSword_actual = config.getItem(config.CATEGORY_ITEM,
+				Names.iceSword_name, Ids.iceSword_default).getInt() - 256;
+
+		Ids.icePickaxe_actual = config.getItem(config.CATEGORY_ITEM,
+				Names.icePickaxe_name, Ids.icePickaxe_default).getInt() - 256;
+
+		Ids.iceAxe_actual = config.getItem(config.CATEGORY_ITEM,
+				Names.iceAxe_name, Ids.iceAxe_default).getInt() - 256;
+
+		Ids.iceSpade_actual = config.getItem(config.CATEGORY_ITEM,
+				Names.iceSpade_name, Ids.iceSpade_default).getInt() - 256;
+
+		Ids.iceHoe_actual = config.getItem(config.CATEGORY_ITEM,
+				Names.iceHoe_name, Ids.iceHoe_default).getInt() - 256;
+
 		// Blocks
 		Ids.wetIce_actual = config.getItem(config.CATEGORY_BLOCK,
 				Names.wetIce_name, Ids.wetIce_default).getInt() - 256;
@@ -50,6 +66,11 @@ public class ConfigHandler {
 				ConfigBooleans.enableBurnables_name,
 				ConfigBooleans.enableBurnables_default).getBoolean(
 				ConfigBooleans.enableBurnables_default);
+
+		ConfigBooleans.enableIceTools = config.get(BOOLEANS,
+				ConfigBooleans.enableIceTools_name,
+				ConfigBooleans.enableIceTools_default).getBoolean(
+				ConfigBooleans.enableIceTools_default);
 
 		// Save the config
 		config.save();
