@@ -13,10 +13,7 @@ public class CustomSpade extends ItemSpade {
 
 	protected CustomSpade(int id, EnumToolMaterial toolMaterial) {
 		super(id, toolMaterial);
-		this.setCreativeTab(CreativeTabs.tabAllSearch);
-		this.setCreativeTab(CreativeTabs.tabTools);
 		this.setCreativeTab(IceCraft.IceCraftTab);
-		this.setMaxStackSize(1);
 	}
 
 	@SideOnly(Side.CLIENT)

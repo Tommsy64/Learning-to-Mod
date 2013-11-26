@@ -1,13 +1,16 @@
 package iceCraft.items.tools;
 
+import iceCraft.IceCraft;
 import iceCraft.items.tools.lib.CustomToolTypes;
 import iceCraft.items.tools.types.ice.IceAxe;
+import iceCraft.items.tools.types.ice.IceHoe;
 import iceCraft.items.tools.types.ice.IcePickaxe;
 import iceCraft.items.tools.types.ice.IceSpade;
 import iceCraft.items.tools.types.ice.IceSword;
 import iceCraft.lib.config.Ids;
 import iceCraft.lib.config.Names;
 import net.minecraft.block.Block;
+import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemTool;
 import cpw.mods.fml.common.registry.LanguageRegistry;
@@ -22,6 +25,7 @@ public class Tools {
 	public static IcePickaxe icePickaxe;
 	public static IceAxe iceAxe;
 	public static ItemSpade iceSpade;
+	public static ItemHoe iceHoe;
 
 	public static void init() {
 		icePick = new IcePick(Ids.icePick_actual, 4,
@@ -31,6 +35,8 @@ public class Tools {
 		icePickaxe = new IcePickaxe(Ids.icePickaxe_actual, CustomToolTypes.Ice);
 		iceAxe = new IceAxe(Ids.iceAxe_actual, CustomToolTypes.Ice);
 		iceSpade = new IceSpade(Ids.iceSpade_actual, CustomToolTypes.Ice);
+		iceHoe = new IceHoe(Ids.iceHoe_actual, CustomToolTypes.Ice);
+
 	}
 
 	public static void addNames() {
@@ -40,6 +46,7 @@ public class Tools {
 		LanguageRegistry.addName(icePickaxe, Names.icePickaxe_name);
 		LanguageRegistry.addName(iceAxe, Names.iceAxe_name);
 		LanguageRegistry.addName(iceSpade, Names.iceSpade_name);
+		LanguageRegistry.addName(iceHoe, Names.iceHoe_name);
 
 		LanguageRegistry.addName(icePick, Names.icePick_name);
 	}
