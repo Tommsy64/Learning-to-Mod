@@ -35,9 +35,9 @@ public class Tools {
 
 		// Ice tool set
 		LanguageRegistry.addName(iceSword, Names.iceSword_name);
-		LanguageRegistry.addName(icePickaxe, Names.iceSword_name);
-		LanguageRegistry.addName(iceAxe, Names.iceSword_name);
-		LanguageRegistry.addName(iceSpade, Names.iceSword_name);
+		LanguageRegistry.addName(icePickaxe, Names.icePickaxe_name);
+		LanguageRegistry.addName(iceAxe, Names.iceAxe_name);
+		LanguageRegistry.addName(iceSpade, Names.iceSpade_name);
 
 		LanguageRegistry.addName(icePick, Names.icePick_name);
 	}
