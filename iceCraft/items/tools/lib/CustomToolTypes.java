@@ -1,4 +1,4 @@
-package iceCraft.items.tools.types;
+package iceCraft.items.tools.lib;
 
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraftforge.common.EnumHelper;

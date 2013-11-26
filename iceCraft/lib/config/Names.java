@@ -23,6 +23,18 @@ public class Names {
 	public static final String iceSword_unlocalizedName = "iceSword";
 	public static final String iceSword_name = "Ice Sword";
 	
+	public static final String iceAxe_unlocalizedName = "iceAxe";
+	public static final String iceAxe_name = "Ice Axe";
+	
+	public static final String icePickaxe_unlocalizedName = "icePickaxe";
+	public static final String icePickaxe_name = "Ice Pickaxe";
+	
+	public static final String iceSpade_unlocalizedName = "iceSpade";
+	public static final String iceSpade_name = "Ice Shovel";
+	
+	public static final String iceHoe_unlocalizedName = "iceHoe";
+	public static final String iceHoe_name = "Ice Hoe";
+	
 	//Blocks
 	public static final String wetIce_unlocalizedName = "wetIce"; 
 	public static final String wetIce_name = "Wet Ice";

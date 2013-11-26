@@ -1,6 +1,6 @@
 package iceCraft.items.tools;
 
-import iceCraft.items.tools.types.CustomTool;
+import iceCraft.items.tools.lib.CustomTool;
 import iceCraft.lib.ModInfo;
 import iceCraft.lib.config.Names;
 import net.minecraft.block.Block;
@@ -14,7 +14,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class IcePick extends CustomTool {
 
-	protected IcePick(int id, float damageVsEntity,
+	public IcePick(int id, float damageVsEntity,
 			EnumToolMaterial toolMaterial, Block[] blocksEffectiveAgainst) {
 		super(id, damageVsEntity, toolMaterial, blocksEffectiveAgainst);
 		this.setUnlocalizedName(Names.icePick_unlocalizedName);

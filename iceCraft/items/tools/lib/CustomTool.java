@@ -1,4 +1,4 @@
-package iceCraft.items.tools.types;
+package iceCraft.items.tools.lib;
 
 import iceCraft.IceCraft;
 import net.minecraft.block.Block;
