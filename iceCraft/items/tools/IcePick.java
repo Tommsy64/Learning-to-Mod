@@ -14,8 +14,8 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class IcePick extends CustomTool {
 
-	public IcePick(int id, float damageVsEntity,
-			EnumToolMaterial toolMaterial, Block[] blocksEffectiveAgainst) {
+	public IcePick(int id, float damageVsEntity, EnumToolMaterial toolMaterial,
+			Block[] blocksEffectiveAgainst) {
 		super(id, damageVsEntity, toolMaterial, blocksEffectiveAgainst);
 		this.setUnlocalizedName(Names.icePick_unlocalizedName);
 	}

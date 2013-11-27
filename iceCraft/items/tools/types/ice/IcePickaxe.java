@@ -12,7 +12,7 @@ public class IcePickaxe extends CustomPickaxe {
 		super(id, toolMaterial);
 		this.setUnlocalizedName(Names.icePickaxe_unlocalizedName);
 	}
-	
+
 	public boolean hitEntity(ItemStack stack,
 			EntityLivingBase par2EntityLivingBase,
 			EntityLivingBase par3EntityLivingBase) {
