@@ -13,6 +13,7 @@ public class IceSpade extends CustomSpade {
 		this.setUnlocalizedName(Names.iceSpade_unlocalizedName);
 	}
 
+	@Override
 	public boolean hitEntity(ItemStack stack,
 			EntityLivingBase par2EntityLivingBase,
 			EntityLivingBase par3EntityLivingBase) {

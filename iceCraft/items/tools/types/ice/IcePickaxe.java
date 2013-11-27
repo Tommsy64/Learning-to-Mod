@@ -1,8 +1,11 @@
 package iceCraft.items.tools.types.ice;
 
 import iceCraft.items.tools.lib.CustomPickaxe;
+import iceCraft.items.tools.lib.ToolUtils;
 import iceCraft.lib.config.Names;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
 
@@ -13,6 +16,7 @@ public class IcePickaxe extends CustomPickaxe {
 		this.setUnlocalizedName(Names.icePickaxe_unlocalizedName);
 	}
 
+	@Override
 	public boolean hitEntity(ItemStack stack,
 			EntityLivingBase par2EntityLivingBase,
 			EntityLivingBase par3EntityLivingBase) {

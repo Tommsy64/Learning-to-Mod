@@ -1,8 +1,11 @@
 package iceCraft.items.tools.types.ice;
 
 import iceCraft.items.tools.lib.CustomHoe;
+import iceCraft.items.tools.lib.ToolUtils;
 import iceCraft.lib.config.Names;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
 

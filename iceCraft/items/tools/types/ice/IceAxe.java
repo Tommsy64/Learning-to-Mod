@@ -13,6 +13,7 @@ public class IceAxe extends CustomAxe {
 		this.setUnlocalizedName(Names.iceAxe_unlocalizedName);
 	}
 
+	@Override
 	public boolean hitEntity(ItemStack stack,
 			EntityLivingBase par2EntityLivingBase,
 			EntityLivingBase par3EntityLivingBase) {
