@@ -3,9 +3,7 @@ package iceCraft.items.tools.types.ice;
 import iceCraft.items.tools.lib.CustomHoe;
 import iceCraft.items.tools.lib.ToolUtils;
 import iceCraft.lib.config.Names;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
 
@@ -16,10 +14,15 @@ public class IceHoe extends CustomHoe {
 		this.setUnlocalizedName(Names.iceHoe_unlocalizedName);
 	}
 
-	public boolean hitEntity(ItemStack stack,
-			EntityLivingBase par2EntityLivingBase,
-			EntityLivingBase par3EntityLivingBase) {
-		stack.damageItem(10, par3EntityLivingBase);
+	public boolean hitEntity(ItemStack stack, EntityLivingBase entity,
+			EntityLivingBase entityPlayer) {
+
+		if (ToolUtils.isMobLava(entity.getEntityName())) {
+			stack.damageItem(1000, entityPlayer);
+			return false;
+		}
+
+		stack.damageItem(10, entityPlayer);
 		return true;
 	}
 }

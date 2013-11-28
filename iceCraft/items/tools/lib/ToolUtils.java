@@ -1,9 +1,5 @@
 package iceCraft.items.tools.lib;
 
-import iceCraft.lib.LogHelper;
-
-import java.util.logging.Level;
-
 public final class ToolUtils {
 
 	public static boolean isMobLava(String mob) {
@@ -14,13 +10,11 @@ public final class ToolUtils {
 		 * break; }
 		 */
 
-		LogHelper.log(Level.INFO, mob);
-		
-		if (mob == "PigZombie") {
+		if (mob.compareToIgnoreCase("PigZombie") == 0) {
 			return true;
-		} else if (mob == "Magma Cube") {
+		} else if (mob.compareToIgnoreCase("Magma Cube") == 0) {
 			return true;
-		} else if (mob == "Blaze") {
+		} else if (mob.compareToIgnoreCase("Blaze") == 0) {
 			return true;
 		}
 		return false;

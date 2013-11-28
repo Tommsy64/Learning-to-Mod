@@ -1,6 +1,7 @@
 package iceCraft.items.tools.types.ice;
 
 import iceCraft.items.tools.lib.CustomSpade;
+import iceCraft.items.tools.lib.ToolUtils;
 import iceCraft.lib.config.Names;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.EnumToolMaterial;
@@ -14,10 +15,15 @@ public class IceSpade extends CustomSpade {
 	}
 
 	@Override
-	public boolean hitEntity(ItemStack stack,
-			EntityLivingBase par2EntityLivingBase,
-			EntityLivingBase par3EntityLivingBase) {
-		stack.damageItem(10, par3EntityLivingBase);
+	public boolean hitEntity(ItemStack stack, EntityLivingBase entity,
+			EntityLivingBase entityPlayer) {
+
+		if (ToolUtils.isMobLava(entity.getEntityName())) {
+			stack.damageItem(1000, entityPlayer);
+			return false;
+		}
+
+		stack.damageItem(10, entityPlayer);
 		return true;
 	}
 }
