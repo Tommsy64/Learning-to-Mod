@@ -33,7 +33,6 @@ public class Refrigerator extends BlockContainer {
 
 		this.setHardness(5F);
 		this.setResistance(10F);
-
 	}
 
 	@Override
@@ -134,12 +133,14 @@ public class Refrigerator extends BlockContainer {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister icon) {
-		topIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
+		topIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":Refrigerator/"
 				+ Names.refrigerator_unlocalizedName + "_top");
-		sideIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
-				+ Names.refrigerator_unlocalizedName + "_side");
-		frontIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":"
-				+ Names.refrigerator_unlocalizedName + "_front");
+		sideIcon = icon.registerIcon(ModInfo.ID.toLowerCase()
+				+ ":Refrigerator/" + Names.refrigerator_unlocalizedName
+				+ "_side");
+		frontIcon = icon.registerIcon(ModInfo.ID.toLowerCase()
+				+ ":Refrigerator/" + Names.refrigerator_unlocalizedName
+				+ "_front");
 	}
 
 	@Override
@@ -151,5 +152,22 @@ public class Refrigerator extends BlockContainer {
 		} else {
 			return frontIcon;
 		}
+	}
+
+	// You don't want the normal render type, or it wont render properly.
+	@Override
+	public int getRenderType() {
+		return -1;
+	}
+
+	// It's not an opaque cube, so you need this.
+	@Override
+	public boolean isOpaqueCube() {
+		return false;
+	}
+
+	// It's not a normal block, so you need this too.
+	public boolean renderAsNormalBlock() {
+		return false;
 	}
 }
