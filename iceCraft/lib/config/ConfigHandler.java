@@ -12,6 +12,8 @@ public class ConfigHandler {
 		final String BOOLEANS = config.CATEGORY_GENERAL
 				+ config.CATEGORY_SPLITTER + "booleans";
 
+		final String FLUIDS = "liquids";
+
 		config.load();
 
 		// Items are shifted 256, so we subtract 256 to compensate
@@ -60,6 +62,14 @@ public class ConfigHandler {
 
 		Ids.refrigerator_actual = config.getItem(config.CATEGORY_BLOCK,
 				Names.refrigerator_name, Ids.refrigerator_default).getInt() - 256;
+
+		// Fluids
+		Ids.liquidIce_actual = config.getItem(FLUIDS, Names.liquidIce_name,
+				Ids.liquidIce_default).getInt() - 256;
+
+		Ids.liquidIceBucket_actual = config.getItem(FLUIDS,
+				Names.liquidIceBucket_name, Ids.liquidIceBucket_default)
+				.getInt() - 256;
 
 		// Booleans
 		ConfigBooleans.enableBurnables = config.get(BOOLEANS,

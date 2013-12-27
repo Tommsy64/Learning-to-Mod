@@ -36,6 +36,10 @@ public class Ids {
 
 	public static int iceHoe_actual;
 	public static final int iceHoe_default = 16011;
+	//Ice tool set ends here
+
+	public static int liquidIceBucket_actual;
+	public static final int liquidIceBucket_default = 16012;
 
 	// Blocks
 	public static int wetIce_actual;
@@ -45,9 +49,13 @@ public class Ids {
 	public static final int mudBrickBlock_default = 3842;
 
 	// public static int mudBrickDry_actual;
-	// public static final int mudBrickDry_default = 16006;
+	// public static final int mudBrickDry_default = ****;
 
 	public static int refrigerator_actual;
 	public static final int refrigerator_default = 3843;
 	public static final int refrigerator_gui = 0;
+
+	// Fluids
+	public static int liquidIce_actual;
+	public static final int liquidIce_default = 3844;
 }

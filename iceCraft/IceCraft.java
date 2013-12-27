@@ -3,6 +3,7 @@ package iceCraft;
 import iceCraft.blocks.Blocks;
 import iceCraft.client.GuiHandler;
 import iceCraft.client.sound.Sound;
+import iceCraft.fluid.Fluids;
 import iceCraft.items.Items;
 import iceCraft.items.tools.Tools;
 import iceCraft.lib.IceCraftTab;
@@ -72,16 +73,20 @@ public class IceCraft {
 				"itemGroup." + ModInfo.NAME, "en_US", ModInfo.NAME);
 		LogHelper.log(Level.INFO, "Localization Loaded");
 
-		LogHelper.log(Level.INFO, "Preparing Items...");
-		Items.init();
-		Items.addNames();
-		LogHelper.log(Level.INFO, "Items Loaded");
+		LogHelper.log(Level.INFO, "Preparing liquids...");
+		Fluids.init();
+		LogHelper.log(Level.INFO, "Liquids loaded");
 
 		LogHelper.log(Level.INFO, "Preparing Blocks...");
 		Blocks.init();
 		Blocks.addNames();
 		Blocks.registerTileEntities();
 		LogHelper.log(Level.INFO, "Blocks Loaded");
+
+		LogHelper.log(Level.INFO, "Preparing Items...");
+		Items.init();
+		Items.addNames();
+		LogHelper.log(Level.INFO, "Items Loaded");
 
 		LogHelper.log(Level.INFO, "Preparing Tools...");
 		Tools.init();
@@ -97,5 +102,5 @@ public class IceCraft {
 	static void postInit(FMLPostInitializationEvent event) {
 
 	}
-	
+
 }

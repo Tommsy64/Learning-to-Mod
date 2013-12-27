@@ -45,4 +45,12 @@ public class Names {
 
 	public static final String refrigerator_unlocalizedName = "refrigerator";
 	public static final String refrigerator_name = "Refrigerator";
+	
+	// Fluids
+	
+	public static final String liquidIce_unlocalizedName  = "liquidIce";
+	public static final String liquidIce_name  = "Liquid Ice";
+	
+	public static final String liquidIceBucket_unlocalizedName = liquidIce_unlocalizedName + "Bucket";
+	public static final String liquidIceBucket_name = liquidIce_name + " Bucket";
 }
