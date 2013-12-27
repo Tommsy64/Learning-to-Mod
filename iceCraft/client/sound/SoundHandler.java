@@ -10,17 +10,16 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class SoundHandler {
-	
-    @SideOnly(Side.CLIENT)
-    @ForgeSubscribe
-    public void onSoundLoad(SoundLoadEvent event) {
-            for(String sound : Sound.files){
 
-                    try {
-                            event.manager.soundPoolSounds.addSound(sound);
-                    } catch(Exception e) {
-                            LogHelper.log(Level.WARNING, "Failed loading sound: " + sound);
-                    }
-            }
-    }
+	@SideOnly(Side.CLIENT)
+	@ForgeSubscribe
+	public void onSound(SoundLoadEvent event) {
+		for(String sound : Sound.files){
+			try {
+				event.manager.addSound(sound);
+			} catch(Exception e) {
+				LogHelper.log(Level.WARNING, "Failed loading sound: " + sound);
+			}
+		}
+	}
 }
