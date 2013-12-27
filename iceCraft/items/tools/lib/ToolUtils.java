@@ -4,7 +4,7 @@ public final class ToolUtils {
 
 	public static boolean isMobLava(String mob) {
 
-		// WTF?! I can't use Strings in a switch statement?!
+		// WTH?! I can't use Strings in a switch statement?!
 		/*
 		 * switch() { case "PigZombie": break; case "MagmaCube": break; default:
 		 * break; }
