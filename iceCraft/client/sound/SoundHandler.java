@@ -18,7 +18,6 @@ public class SoundHandler {
 
                     try {
                             event.manager.soundPoolSounds.addSound(sound);
-                            LogHelper.log(Level.INFO, sound);
                     } catch(Exception e) {
                             LogHelper.log(Level.WARNING, "Failed loading sound: " + sound);
                     }
