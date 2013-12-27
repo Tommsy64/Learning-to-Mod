@@ -1,5 +1,6 @@
 package iceCraft.blocks;
 
+import iceCraft.IceCraft;
 import iceCraft.fluid.Fluids;
 import iceCraft.lib.config.Names;
 import net.minecraft.block.Block;
@@ -12,6 +13,11 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockLiquidIce extends BlockFluidClassic {
+
+	@SideOnly(Side.CLIENT)
+	protected Icon stillIcon;
+	@SideOnly(Side.CLIENT)
+	protected Icon flowingIcon;
 
 	public BlockLiquidIce(int id) {
 		super(id, Fluids.liquidIce, Material.water);

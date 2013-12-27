@@ -16,8 +16,10 @@ public class Fluids {
 	}
 
 	public static void initBucketHandler() {
-		BucketHandler.INSTANCE.buckets.put(Blocks.liquidIceBlock,
+		BucketHandler.INSTANCE.buckets.put(Blocks.blockLiquidIce,
 				Items.liquidIceBucket);
 		MinecraftForge.EVENT_BUS.register(BucketHandler.INSTANCE);
+		
+		MinecraftForge.EVENT_BUS.register(new FluidTextureLoader());
 	}
 }
