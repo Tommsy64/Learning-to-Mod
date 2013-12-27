@@ -1,5 +1,6 @@
 package iceCraft.tileentity;
 
+import iceCraft.blocks.models.RefrigeratorModel;
 import iceCraft.lib.ModInfo;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;

@@ -33,6 +33,7 @@ public class Refrigerator extends BlockContainer {
 
 		this.setHardness(5F);
 		this.setResistance(10F);
+		this.setBlockBounds(0.4F, 0.0F, 0.4F, 0.6F, 3.0F, 0.6F);
 	}
 
 	@Override
