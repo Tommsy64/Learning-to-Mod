@@ -13,12 +13,12 @@ public class SoundHandler {
 	
     @SideOnly(Side.CLIENT)
     @ForgeSubscribe
-    public void onSzzoundLoad(SoundLoadEvent event) {
-
+    public void onSoundLoad(SoundLoadEvent event) {
             for(String sound : Sound.files){
 
                     try {
                             event.manager.soundPoolSounds.addSound(sound);
+                            LogHelper.log(Level.INFO, sound);
                     } catch(Exception e) {
                             LogHelper.log(Level.WARNING, "Failed loading sound: " + sound);
                     }
