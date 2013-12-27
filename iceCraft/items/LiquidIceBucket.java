@@ -1,9 +1,7 @@
 package iceCraft.items;
 
 import iceCraft.IceCraft;
-import iceCraft.fluid.Fluids;
 import iceCraft.lib.config.Ids;
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -13,15 +11,15 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.Event;
-import net.minecraftforge.event.Event.Result;
-import net.minecraftforge.event.EventPriority;
-import net.minecraftforge.event.ForgeSubscribe;
 import net.minecraftforge.event.entity.player.FillBucketEvent;
 import net.minecraftforge.fluids.ItemFluidContainer;
 
 public class LiquidIceBucket extends ItemFluidContainer {
 
-	/** field for checking if the bucket has been filled. Also Block ID of placed liquid block */
+	/**
+	 * field for checking if the bucket has been filled. Also Block ID of placed
+	 * liquid block
+	 */
 	private int isFull;
 
 	public LiquidIceBucket(int itemID, int isFull) {
@@ -92,7 +90,6 @@ public class LiquidIceBucket extends ItemFluidContainer {
 					return new ItemStack(Item.bucketEmpty);
 				}
 			}
-
 			return item;
 		}
 
@@ -113,7 +110,7 @@ public class LiquidIceBucket extends ItemFluidContainer {
 				return false;
 			} else {
 				if (par1World.provider.isHellWorld
-						&& this.isFull == Ids.liquidIce_actual) {
+						&& this.isFull == Ids.liquidIceBlock_actual) {
 					par1World.playSoundEffect((double) ((float) par2 + 0.5F),
 							(double) ((float) par3 + 0.5F),
 							(double) ((float) par4 + 0.5F), "random.fizz",
@@ -140,30 +137,5 @@ public class LiquidIceBucket extends ItemFluidContainer {
 				return true;
 			}
 		}
-	}
-
-	@ForgeSubscribe(priority = EventPriority.NORMAL)
-	public void FillBucket(FillBucketEvent event) {
-		ItemStack result = attemptFill(event.world, event.target);
-		if (result != null) {
-			event.result = result;
-			event.setResult(Result.ALLOW);
-		}
-	}
-
-	private ItemStack attemptFill(World world, MovingObjectPosition p) {
-		int id = world.getBlockId(p.blockX, p.blockY, p.blockZ);
-
-		if (id == Ids.liquidIce_actual) {
-			// Check that it is a source block
-			if (world.getBlockMetadata(p.blockX, p.blockY, p.blockZ) == 0) {
-				// Remove the fluid block
-				world.setBlock(p.blockX, p.blockY, p.blockZ, 0);
-
-				// Return the filled bucked item here.
-				return new ItemStack(Items.liquidIceBucket);
-			}
-		}
-		return null;
 	}
 }

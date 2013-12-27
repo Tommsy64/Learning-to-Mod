@@ -23,7 +23,7 @@ public class Items {
 		mud = new Mud(Ids.mud_actual);
 		mudBrick = new MudBrick(Ids.mudBrick_actual);
 		liquidIceBucket = new LiquidIceBucket(Ids.liquidIceBucket_actual,
-				Ids.liquidIce_actual);
+				Ids.liquidIceBlock_actual);
 
 		rawBacon = new GenericFood(Ids.rawBacon_actual,
 				Names.rawBacon_unlocalizedName, 32, 64, 3, 0.2F, true, false);

@@ -36,7 +36,7 @@ public class Ids {
 
 	public static int iceHoe_actual;
 	public static final int iceHoe_default = 16011;
-	//Ice tool set ends here
+	// Ice tool set ends here
 
 	public static int liquidIceBucket_actual;
 	public static final int liquidIceBucket_default = 16012;
@@ -55,7 +55,6 @@ public class Ids {
 	public static final int refrigerator_default = 3843;
 	public static final int refrigerator_gui = 0;
 
-	// Fluids
-	public static int liquidIce_actual;
-	public static final int liquidIce_default = 3844;
+	public static int liquidIceBlock_actual;
+	public static final int liquidIceBlock_default = 3844;
 }

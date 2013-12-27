@@ -93,6 +93,10 @@ public class IceCraft {
 		Tools.addNames();
 		LogHelper.log(Level.INFO, "Tools Loaded");
 
+		LogHelper.log(Level.INFO, "Initiating Bucket handler...");
+		Fluids.initBucketHandler();
+		LogHelper.log(Level.INFO, "Bucket handler succefully initiated");
+
 		LogHelper.log(Level.INFO, "Preparing Recipes...");
 		Recipes.init();
 		LogHelper.log(Level.INFO, "Recipes Loaded");

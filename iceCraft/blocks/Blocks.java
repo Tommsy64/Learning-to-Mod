@@ -18,7 +18,7 @@ public class Blocks {
 		wetIce = new WetIce(Ids.wetIce_actual);
 		mudBrickBlock = new MudBrickBlock(Ids.mudBrickBlock_actual);
 		refrigerator = new Refrigerator(Ids.refrigerator_actual);
-		liquidIceBlock = new LiquidIceBlock(Ids.liquidIce_actual);
+		liquidIceBlock = new BlockLiquidIce(Ids.liquidIceBlock_actual);
 
 		GameRegistry.registerBlock(wetIce, Names.wetIce_name);
 		GameRegistry.registerBlock(refrigerator, Names.refrigerator_name);

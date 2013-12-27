@@ -1,8 +1,9 @@
 package iceCraft.fluid;
 
-import iceCraft.lib.config.Names;
+import iceCraft.blocks.Blocks;
+import iceCraft.items.Items;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fluids.FluidRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class Fluids {
 
@@ -10,6 +11,13 @@ public class Fluids {
 
 	public static void init() {
 		liquidIce = new LiquidIce();
+
 		FluidRegistry.registerFluid(liquidIce);
+	}
+
+	public static void initBucketHandler() {
+		BucketHandler.INSTANCE.buckets.put(Blocks.liquidIceBlock,
+				Items.liquidIceBucket);
+		MinecraftForge.EVENT_BUS.register(BucketHandler.INSTANCE);
 	}
 }

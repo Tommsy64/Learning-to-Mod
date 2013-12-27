@@ -64,8 +64,8 @@ public class ConfigHandler {
 				Names.refrigerator_name, Ids.refrigerator_default).getInt() - 256;
 
 		// Fluids
-		Ids.liquidIce_actual = config.getItem(FLUIDS, Names.liquidIce_name,
-				Ids.liquidIce_default).getInt() - 256;
+		Ids.liquidIceBlock_actual = config.getItem(FLUIDS, Names.liquidIce_name,
+				Ids.liquidIceBlock_default).getInt() - 256;
 
 		Ids.liquidIceBucket_actual = config.getItem(FLUIDS,
 				Names.liquidIceBucket_name, Ids.liquidIceBucket_default)
