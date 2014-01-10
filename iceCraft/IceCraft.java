@@ -62,7 +62,11 @@ public class IceCraft {
 	}
 
 	@EventHandler
-	static void init(FMLInitializationEvent event) {
+	static void init(FMLInitializationEvent event) {		
+        LogHelper.log(Level.FINE, "Started initializing event handlers");
+        proxy.initEventHandlers();
+        LogHelper.log(Level.FINE, "Event handlers successfully initialized");
+		
 		LogHelper.log(Level.INFO, "Preparing Gui Handler...");
 		new GuiHandler();
 		LogHelper.log(Level.INFO, "Gui Handler loaded");
