@@ -39,7 +39,6 @@ public class Blocks {
 	
 	public static void registerFluidTextures() {
 		Fluids.liquidIce.setIcons(blockLiquidIce.getBlockTextureFromSide(0), blockLiquidIce.getBlockTextureFromSide(1));
-		LogHelper.log(Level.INFO, "HIAZ");
 	}
 
 	public static void addNames() {
